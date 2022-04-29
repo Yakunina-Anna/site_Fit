@@ -1,0 +1,166 @@
+
+.reviews{
+    
+    &__inner{
+        // height: 1000px;
+        background-image: url(../../image/bg-reviews.svg) ;
+        background-repeat:no-repeat;
+        background-position: 50% 100px;
+        
+    }
+    
+    &__title{
+        margin-top: 50px;
+        margin-bottom: 30px;;
+    }
+    
+    &__wrapper{
+        padding: 40px 97px 0 97px;
+        height: 580px;
+        background-color: $white-body;
+        box-shadow: 0px 0px 25px rgba(68, 75, 89, 0.24);
+        border-radius: 15px;
+        position: relative;
+        // запрет на копирование текста
+        -ms-user-select: none; 
+		-moz-user-select: none; 
+		-webkit-user-select: none; 
+		user-select: none; 
+    }
+
+    &__wrapper::after{
+        content: "";
+        width: 124px;
+        height: 94px;
+        background-image: url(../../image/reviews-obj.svg);
+        position: absolute;
+        top: -65px;
+        right: 50px;
+    }
+
+    &__item-img{
+        padding-right: 28px;
+    }
+
+    &__item-heading{
+        max-width: 344px;
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+        padding-right:28px;
+        padding-bottom:40px;
+        img{
+            width: 120px;
+            height: 120px; 
+        }
+        span {
+            @include small
+        }
+    }
+    &__item-text{
+        @include small;
+       
+    }
+    &__item-list{
+        @include small;
+        list-style-type: decimal ;
+        padding-left: 20px;
+       
+    }
+
+    &__button{
+       margin-top: 40px; 
+       margin-bottom: 72px;
+    }
+
+    &__down-subtitle {
+        padding-bottom: 25px;
+       @include subtitle1;
+       span{
+           color: $green-fit;
+       }
+    }
+
+
+    
+}
+// слайдер
+.slick-slider{
+
+}
+//ограничивающая оболочка
+.slick-list{
+overflow: hidden;
+}
+//лента слайдов
+.slick-track{
+    display: flex;
+}
+
+//слайд
+.slick-slide{}
+//активный слайд
+.slick-slide.slick-active{}
+//основной слайд
+.slick-slide.slick-current{}
+// слайд по центру
+.slick-slide.slick-center{}
+
+//стрелка
+.slick-arrow{}
+//стрелка влево
+.slick-arrow.slick-prev{}
+//стрелка вправо
+.slick-arrow.slick-next{}
+// стрелка не активная
+.slick-arrow.slick-disabled{}
+
+
+//точки
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+
+//Конкретный слайдер
+.reviews__button .slick-arrow{
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.reviews__button .slick-arrow.slick-prev{
+    background: url(../../image/reviews/icon/reviews_prev.svg) 0 0/100% no-repeat;
+}
+.reviews__button .slick-arrow.slick-prev:hover{
+    background: url(../../image/reviews/icon/reviews_prev-hover.svg) 0 0/100% no-repeat;
+}
+.reviews__button .slick-arrow.slick-prev:active{
+    background: url(../../image/reviews/icon/reviews_prev-active.svg) 0 0/100% no-repeat;
+}
+.reviews__button .slick-arrow.slick-prev.slick-disabled{
+    background: url(../../image/reviews/icon/reviews_prev-disable.svg) 0 0/100% no-repeat;
+}
+
+.reviews__button .slick-arrow.slick-next{
+    margin-left: 36px;
+    background: url(../../image/reviews/icon/reviews_next.svg) 0 0/100% no-repeat;
+}
+
+.reviews__button .slick-arrow.slick-next:hover{
+    background: url(../../image/reviews/icon/reviews_next-hover.svg) 0 0/100% no-repeat;
+}
+.reviews__button .slick-arrow.slick-next:active{
+    background: url(../../image/reviews/icon/reviews_next-active.svg) 0 0/100% no-repeat;
+}
+.reviews__button .slick-arrow.slick-next.slick-disabled{
+    background: url(../../image/reviews/icon/reviews_next-disable.svg) 0 0/100% no-repeat;
+}
+
+
+
+
+
+
+
+

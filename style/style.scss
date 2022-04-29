@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+//Переменные 
+@import "./_var.scss";
+
+// Примеси Миксины
+@import "./_mixins.scss";
+// Формы
+@import "./forms";
+
+// Кнопки
+@import "./_button.scss";
+// Попапы
+@import "./popup";
+
+// Нижняя форма отправки
+@import "./_formDown.scss";
+
+
+// // form
+// @import "blocks/forms";
+
+// Шапка
+@import "blocks/header";
+
+// Заголовок главной страницы
+@import "blocks/main-title";
+
+// Блок about
+@import "blocks/about";
+
+// Принципы
+@import "blocks/principles";
+
+// Вопросы
+@import "blocks/questions";
+
+// Видео тренировок
+@import "blocks/workout";
+
+// Стоимость тренировок
+@import "blocks/price";
+
+// Стоимость тренировок
+@import "blocks/reviews";
+
+// Блок contacts
+@import "blocks/contacts";
+
+// Блок footer
+@import "blocks/footer";
+
+
+// Базовые стили
+@import "./_main.scss";
+
+
+
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html,
+body {
+
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    min-width: 375px;
+    overflow-anchor: none;
+    color: $gray-fit;
+    @include main;
+     
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    color: inherit;
+    /* наследование цвета от родителя */
+}
+
+input{
+    outline: none;
+}

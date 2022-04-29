@@ -1,0 +1,72 @@
+
+
+.heading{
+    background-color: $green-body;
+    // height: 900px;
+    &__inner{
+        padding-top: 103px;
+        position: relative;
+        background-image: url(../../image/Circle.svg);
+        background-repeat:no-repeat;
+        background-position: 100% 176px;
+    }
+    &__background-photo{
+        overflow: hidden;
+        width: 660px;
+        height: 661px;
+        position: absolute;
+        z-index: 2;
+        left:503px;
+        top:204px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    // &__background-circle{
+    //     overflow: hidden;
+    //     width: 457px;
+    //     height: 457px;
+    //     position: absolute;
+    //     z-index: 1;
+    //     left: 694px;
+    //     top: 176px;
+
+    //     img {
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    // }
+   
+    &__subtitle-top{
+        text-transform:uppercase;
+        @include title-h3;
+        // color: $gray-fit;
+        margin-bottom: 19px;
+        
+    }
+    &__title{
+        // color: $gray-fit;
+       
+       @include title-h1;
+       margin-bottom: 20px;
+        
+    }
+    &__subtitle-bottom{
+        @include title-h2;
+        color: $green-fit;
+        margin-bottom: 36px;
+    }
+    &__text{
+        width: 376px;
+        margin-bottom: 41px;
+        @include subtitle3;
+    }
+    &__button{
+       @include main;
+       padding: 25px 104px 25px 104px;
+       margin-bottom: 162px;
+    }
+
+}
+

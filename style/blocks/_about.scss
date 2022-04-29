@@ -1,0 +1,42 @@
+.about{
+    &__inner
+    {
+        @include center-column
+    }
+    &__title{
+        margin-bottom: 54px;
+        
+    }
+    &__subtitle{
+        @include subtitle1;
+        margin-bottom: 54px;
+    }
+
+    &__content{
+       width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    &__content-item{
+         width: 308px;
+         @include center-column;
+         img{
+             margin-bottom: 38px;
+         }
+    }
+
+    &__content-text{
+        height: 108px;
+        @include main;
+        text-align:center;
+        margin-bottom: 45px;
+    }
+
+    &__content-button{
+         @include main;
+         padding: 25px 60px;
+    }
+}
+

@@ -1,0 +1,61 @@
+#block{
+    width: 100%;
+    display: none;
+}
+#workoutOpen {
+    display: block;
+}
+#workoutClose {
+    display: none;
+}
+
+
+.workout{
+    &__inner{
+         margin-top: -100px;
+         @include center-column
+
+    }
+    &__title{
+        @include title-h2;
+        text-align: center;
+        margin-bottom:49px;
+        span {
+            color:$green-fit
+        }
+    }
+    &__text{
+        @include subtitle1;
+        text-align: center;
+        margin-bottom:57px;
+        max-width: 663px;
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        margin-bottom: 57px;
+    }
+     &__item {
+         border-radius: 10px;
+         max-width:370px;
+     }
+     &__item-description {
+         margin-top: 24px;
+        @include subtitle2;
+     }
+
+     &__button{
+          @include main;
+          padding: 25px 99px;
+     }
+
+     &__button-close{
+        @include main;
+        padding: 25px 125px;
+   }
+
+
+}
+

@@ -1,0 +1,154 @@
+.accordeon__item {
+    
+    cursor: pointer;
+    position: relative;
+}
+.accordeon__heading {
+    height: 60px;
+    display: flex;align-items: center;
+    padding-top: 22px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid $gray-fit;
+    @include subtitle1
+}
+
+.accordeon__heading::after {
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-image: url(../../image/icon/open.svg);
+    position: absolute;
+    right: 20px;
+}
+
+.active::after {
+    // transition:all 1s;
+    content: "";
+    background-image: url(../../image/icon/close.svg);
+}
+
+.accordeon__inner {
+    color: #4f4f4f;
+    display: none;
+    overflow: hidden;
+     background: $white-body;
+     
+     border-radius: 10px;
+}
+
+.accordeon__list .active {
+    border-bottom: none;
+    padding-bottom: 49px;
+}
+
+.active+.accordeon__inner {
+    display:block;
+    transition: all 1s ease;
+   box-shadow: 0px 0px 30px rgba(11, 78, 11, 0.15);
+   margin-bottom: 62px;
+
+    -webkit-animation: fade ease-in 0.5s;
+    -moz-animation: fade ease-in 0.5s;
+    animation: fade ease-in 0.5s;
+}
+
+.questions {
+     &__inner {
+         @include center-column;
+         color: inherit;
+         
+         
+     }
+    &__title{
+        margin-bottom: 71px;
+    }
+
+    &__text {
+        @include subtitle2;
+        margin-bottom: 27px;
+        text-align: center;
+        padding: 0 97px;
+    }
+    &__wrapper{
+        width: 100%;
+    }
+    &__item-wrap {
+        
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 56px;
+        height: 458px;
+    }
+    &__item-img {
+        width:50%;
+        
+    }
+     &__item-img1 {
+        width: 490px;
+        height: 355px;
+
+     }
+
+    &__item-img2 {
+        width: 355px;
+        height: 389px;
+
+    }
+
+    &__item-img3 {
+        width: 456px;
+        height: 410px;
+
+    }
+    &__item-img4 {
+        width: 397px;
+        height: 362px;
+
+    }
+
+    &__item-title {
+        @include main;
+        @include subtitle2;
+        padding-bottom: 24px;
+        color: $green-fit;
+
+    }
+    &__item-text{
+        max-width: 515px;
+        @include main;
+
+    }
+    
+   
+}
+@-moz-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}

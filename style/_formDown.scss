@@ -1,0 +1,36 @@
+.form-down{
+    position: relative;
+ width: 82%;
+ background-color: $gray-fit;
+ border-radius: 21px;
+ @include center-column;
+ color: $white-body;
+ margin-top: 53px;
+ margin-bottom: 100px;
+ padding-top: 48px;
+ padding-bottom: 54px;
+ &__title{
+     @include title-h3;
+     text-transform:uppercase;
+     margin-bottom: 25px;
+ }
+}
+
+.form-down::before{
+content: "";
+position: absolute;
+z-index: 10;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(37, 42, 52, 0.8) url(../image/icon/Loading_icon.gif) center / 100px no-repeat ;
+opacity: 0;
+visibility: hidden;
+
+}
+
+.form-down._sending::before{
+    opacity: 0;
+visibility: visible;
+}
