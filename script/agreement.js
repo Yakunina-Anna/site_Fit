@@ -11,100 +11,103 @@ document.addEventListener('DOMContentLoaded', function(){
        let formData = new FormData(formDown); //вытягиваем все даднные из формы
        
 
-    //    if(error===0){
-    //     formDown.classList.add('_sending')
-    //     let response = await fetch('sendmail.php',{
-    //         method: 'POST',
-    //         body:formData
-    //     });
-    //      if (response.ok){
-    //         let result= await response.json();
-    //         alert(result.message);
-    //         // formPreview.innerHTML= '';
+       if(error===0){
+        formDown.classList.add('_sending')
+        let response = await fetch('sendmail.php',{
+            method: 'POST',
+            body:formData
+        });
+         if (response.ok){
+            let result= await response.json();
+            alert(result.message);
+            // formPreview.innerHTML= '';
             
-    //         form.classList.remove('_sending');
-    //         form.reset();
+            form.classList.remove('_sending');
+            form.reset();
 
-    //      }else{
-    //         alert("Ошибка");
-    //         form.classList.remove('_sending');
+         }else{
+            alert("Ошибка");
+            form.classList.remove('_sending');
 
-    //      }
-    //    }
-    //    else{
-    //         alert('please,dont panic');
-    //    }
-
+         }
+       }
+       else{
+            alert('please,dont panic');
+       }
+      
 
        function formValidate(formDown){
             let error=0;
             let formReq= document.querySelectorAll('._req');
             
-
             for (let index=0; index <formReq.length;index++){
                 const input = formReq[index];
                  formRemoveError(input);
-
-
-                 if( !input.value) {
-                    formAddError(input)
-                    error++;
-                } else {
-
-                 if (input.classList.contains('_name')){
-
-                    if (nameTest(input)){
-                        input.style.borderColor = "red";
-                        formAddError(input);
-                        error++;
-
-                    }else{
-                        formRemoveError(input);
-
-                    }
-                   
-
-               } 
                 
-                // else if (input.classList.contains('_phone')){
-                //     if (phoneTest(input)){
-                //         formAddError(input);
-                //         error++;
+                    if (input.classList.contains('_name')){
 
-                //     }
-                // } else if(input.getAttribute("type")==="checkbox" && input.checked===false){
-                //     formAddError(input);
-                //     error++;
-                // } else{
-                //     if(input.value===''){
-                //         formAddError(input);
-                //         error++;
-                //     }
-                // }
-                };
+                        if (!input.value || nameTest(input)){
+                            formAddError(input);
+                            error++;
+
+                        }
+                        else{
+                            formRemoveErrorText(input);
+                        }
+                    } else if (input.classList.contains('_phone')){
+                        if (phoneTest(input)){
+                            formAddError(input);
+                            error++;
+    
+                        }
+                        else{
+                            formRemoveErrorText(input);
+                        }
+                    } else if(input.getAttribute("type")==="checkbox" ){
+                        if(input.checked===false){
+                            input.parentElement.style.border="4px solid red";
+                            error++;
+                        } else{
+                            input.parentElement.style.border="none";
+                        }
+                        
+                    }  else{
+                            if(input.value===''){
+                                formAddError(input);
+                                error++;
+                            }
+                        }
 
 
+               
             }
+            
             return error;
 
        }
 
        function formAddError(input){
-       input.style.borderColor = "red"
-       let err = input.nextElementSibling
-       console.log(err);
-       err.classList.add('errEnabled')
-       err.classList.remove('errDisabled')
-        //    input.parentElement.classList.add('_error');
-        //    input.classList.add('_error');
+            input.style.borderColor = "#EB5757";
+            let err = input.nextElementSibling;
+            err.classList.add('errEnabled')
+            err.classList.remove('errDisabled')
+       }
+   
+       function formRemoveError(input) {
+            input.style.borderColor = "";
+            let err = input.nextElementSibling;
+       
        }
 
-       function formRemoveError(input) {
-        input.style.borderColor = "";
-        let err = input.nextElementSibling;
-        err.classList.remove('errEnabled');
-        err.classList.add('errDisabled');
+       function formRemoveErrorText(input) {
+            input.style.borderColor = "";
+            let err = input.nextElementSibling;
+            err.classList.remove('errEnabled');
+            err.classList.add('errDisabled');
        }
+
+    
+
 
     //    function emailTest(input){
     //        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)

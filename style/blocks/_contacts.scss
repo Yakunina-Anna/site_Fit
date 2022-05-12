@@ -68,7 +68,9 @@
         margin-top: 40px;
     }
    
-
+    &__down{
+        @include center-column
+    }
 
 
 

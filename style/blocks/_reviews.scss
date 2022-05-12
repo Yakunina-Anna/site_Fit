@@ -15,8 +15,8 @@
     }
     
     &__wrapper{
-        padding: 40px 97px 0 97px;
-        height: 580px;
+        padding: 40px 97px 15px 97px;
+        min-height: 580px;
         background-color: $white-body;
         box-shadow: 0px 0px 25px rgba(68, 75, 89, 0.24);
         border-radius: 15px;

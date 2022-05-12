@@ -6,9 +6,9 @@
 
     }
     &__content{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 71px;
         
 
     }
@@ -38,6 +38,7 @@
         // max-width: 271px;
         @include main;
         padding-bottom: 35px;
+        min-height: 54px
     }
 
     &__item-value{

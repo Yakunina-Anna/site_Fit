@@ -21,21 +21,31 @@
     }
     &__menu{
         @include small;
+        box-sizing: border-box;
+       
         ul {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         li {
-             display: inline;
+             display: inline-flex;
          }
     }
+    
     &__menu-item{
         padding-right: 62px;
     }
     &__menu-item:last-child{
         padding-right: 0;
     }
-    &__menu-link:hover{
+
+    &__menu-link{
+
+        border-bottom: 3px solid $white-body;
+    }
+    &__menu-item:hover &__menu-link{
+        
         border-bottom: 3px solid $green-fit;
         color: $green-fit;
     }

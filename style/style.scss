@@ -4,6 +4,9 @@
 
 // Примеси Миксины
 @import "./_mixins.scss";
+
+
+
 // Формы
 @import "./forms";
 
@@ -53,8 +56,15 @@
 // Базовые стили
 @import "./_main.scss";
 
+// Отдельные стили для страницы "Обо мне"
+@import  "blocks/style_about/_about";
+// Отдельные стили для страницы "Блог"
+@import  "blocks/style_blog/_blogs";
+// Отдельные стили для страницы "каждый отдельный блог"
+@import  "blocks/style_blog/_blog-item";
 
-
+// Медиа запросы
+@import "./_media.scss";
 
 html,
 body,

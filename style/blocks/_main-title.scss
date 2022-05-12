@@ -7,13 +7,14 @@
         padding-top: 103px;
         position: relative;
         background-image: url(../../image/Circle.svg);
+        background-size: 457px;
         background-repeat:no-repeat;
         background-position: 100% 176px;
     }
     &__background-photo{
         overflow: hidden;
-        width: 660px;
-        height: 661px;
+        max-width: 660px;
+        max-height: 661px;
         position: absolute;
         z-index: 2;
         left:503px;

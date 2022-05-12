@@ -15,9 +15,9 @@
         <div class="header__menu-inner">
             <div class="header__logo"><a href="#"><img class="header__logo-img" src="./image/logo/logoforlight.svg" alt=""></a></div>
             <nav class="header__menu">
-                <ul>
+                <ul class="header__menu-list">
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">О тренере</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О тренере</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Блог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Услуги</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Стоимость</a></li>
@@ -29,7 +29,7 @@
     </div>
 </header>
 <main>
-    <section class="heading">
+     <section class="heading"> 
         <div class="container">
             <div class="heading__inner">
                 <h3 class="heading__subtitle-top">тренер по фитнесу яна лебедева</h3>
@@ -42,8 +42,8 @@
             </div>
         </div>
         
-    </section>
-    <section id="about" class="about lock-padding">
+    </section> 
+    <section id="about" class="about lock-padding" id="about">
         <div class="container">
             <div class="inner about__inner">
                 <h2 class="title about__title">Привет, меня зовут <span>Лебедева Яна</span></h2>
@@ -54,7 +54,19 @@
                     <div class="about__content-item">
                         <img src="./image/icon/fitness-diplom.svg" alt="диплом фитнес тренера">
                         <p class="about__content-text">Выпускник университета физической культуры, спорта и здоровья им. П. Ф. Лесгафта</p>
-                        <a  id="diploma" class="button__strocked about__content-button popup-link">Смотреть диплом</a>
+                        <a  href="#diploma" class="button__strocked about__content-button popup-about">Смотреть диплом</a>
+                       
+                        <div id="diploma" class="mfp-hide">
+                            <div class="about__sliders">
+                                <div class="about__slider-item"></div>
+                                <div class="about__slider-item"></div>
+                                <div class="about__slider-item"></div>
+                                <div class="about__slider-item"></div>
+                                <div class="about__slider-item"></div>
+                                <div class="about__slider-item"></div>
+                            </div>
+
+                        </div>
                        
 
 
@@ -74,8 +86,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="principles">
+    </section> 
+    <section class="principles" id="principles"> 
         
         <div class="container principles__container">
             <div class="principles__background-photo"><img src="./image/principles_yana/IMG_222723 1@3x.png" alt=""></div>
@@ -119,7 +131,7 @@
 
 
     </section>
-    <section class="questions">
+   <section class="questions" id="questions">
         <div class="container">
             <div class="inner questions__inner">
                 <h2 class="title questions__title">
@@ -296,8 +308,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="workout">
+    </section> 
+     <section class="workout" id="workout">
         <div class="container">
             <div class="inner workout__inner">
                 <h2 class="workout__title">Тренировочный <span>процесс</span></h2>
@@ -305,18 +317,18 @@
                 <div class="workout__content">
                     <div class="workout__item">
                         <div class="workout__video">
-                            <iframe width="371" height="221"
+                            <iframe width="100%" height="221"
                             src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
                             frameborder="0" showinfo="0"
                             
                             allowfullscreen>
                         </iframe>
                         </div>
-                        <p class="workout__item-description"></p>>Описание видео вкратце что происходит</p>
+                        <p class="workout__item-description">Описание видео вкратце что происходит</p>
                     </div>
                     <div class="workout__item">
                         <div class="workout__video">
-                            <iframe width="371" height="221"
+                            <iframe width="100%" height="221"
                             src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
                             frameborder="0" showinfo="0"
                             allowfullscreen>
@@ -326,47 +338,51 @@
                     </div>
                     <div class="workout__item">
                         <div class="workout__video">
-                            <iframe width="371" height="221"
+                            <iframe width="100%" height="221"
                             src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
                             frameborder="0" showinfo="0"
                             allowfullscreen>
                         </iframe>
                         </div>
-                        <p class="workout__item-description"></p>>Описание видео вкратце что происходит</p>
+                        <p class="workout__item-description">Описание видео вкратце что происходит</p>
                     </div>
+                    
                 </div>
                 <div id="block" >
                     <div  class="workout__content" >
-                    <div class="workout__item">
-                        <div class="workout__video">
-                            <iframe width="371" height="221"
-                            src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
-                            frameborder="0" showinfo="0"
-                            allowfullscreen>
-                        </iframe>
+                        <div class="workout__item">
+                            <div class="workout__video">
+                                <iframe width="100%" height="221"
+                                src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
+                                frameborder="0" showinfo="0"
+                                
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <p class="workout__item-description">Описание видео вкратце что происходит</p>
                         </div>
-                        <p class="workout__item-description"></p>>Описание видео вкратце что происходит</p>
-                    </div>
-                    <div class="workout__item">
-                        <div class="workout__video">
-                            <iframe width="371" height="221"
-                            src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
-                            frameborder="0" showinfo="0"
-                            allowfullscreen>
-                        </iframe>
+                        <div class="workout__item">
+                            <div class="workout__video">
+                                <iframe width="100%" height="221"
+                                src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
+                                frameborder="0" showinfo="0"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <p class="workout__item-description">Описание видео вкратце что происходит</p>
                         </div>
-                        <p class="workout__item-description">Описание видео вкратце что происходит</p>
-                    </div>
-                    <div class="workout__item">
-                        <div class="workout__video">
-                            <iframe width="371" height="221"
-                            src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
-                            frameborder="0" showinfo="0""
-                            allowfullscreen>
-                        </iframe>
+                        <div class="workout__item">
+                            <div class="workout__video">
+                                <iframe width="100%" height="221"
+                                src="https://www.youtube.com/embed/EZ-LO9_Fzk8"
+                                frameborder="0" showinfo="0"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <p class="workout__item-description">Описание видео вкратце что происходит</p>
                         </div>
-                        <p class="workout__item-description"></p>>Описание видео вкратце что происходит</p>
-                    </div>
+                        
+                    
                     </div>
                 </div>
                 
@@ -378,8 +394,8 @@
                 </button>
             </div>
         </div>
-    </section>
-    <section class="price">
+    </section> 
+ <section class="price" id="price">
         <div class="container">
             <div class="inner price__inner">
                 <h2 class="title price__title">
@@ -435,8 +451,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="reviews">
+    </section> 
+<section class="reviews" id="reviews">
         <div class="container">
             <div class="inner reviews__inner">
                 <h2 class="title reviews__title" >Отзывы</h2>
@@ -761,40 +777,40 @@
                     </p>
                     <div class="reviews__down-slider">
                         <div class="reviews__down-item">
-                           <img data-lazy="./image/reviews/reviews-down/slide1.png" alt="">
+                           <img src="./image/reviews/reviews-down/slide1.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide2.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide2.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide3.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide3.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide4.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide4.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide5.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide5.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide6.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide6.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide7.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide7.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide8.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide8.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide9.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide9.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide10.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide10.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide11.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide11.png" alt="">
                         </div>
                         <div class="reviews__down-item">
-                            <img data-lazy="./image/reviews/reviews-down/slide12.png" alt="">
+                            <img src="./image/reviews/reviews-down/slide12.png" alt="">
                         </div>
                     </div>
                 </div>  
@@ -802,8 +818,8 @@
 
             </div>
         </div>
-    </section>
-    <section class="contacts">
+    </section> 
+    <section class="contacts" id="contacts">
         <div class="container contacts__container">
             <div class="inner">
                 <h2 class="title ">
@@ -864,16 +880,16 @@
                                 <ladel class="form__item-label " for="firstName">Как вас зовут?</ladel>
                                 <input class="form__item-input _req _name 
                                 " id="firstName" type="text" name="firstName" placeholder="Имя">
-                                <div class="errDisabled">Поле должно быть заполнено!</div>
+                                <div class="form__error errDisabled">Имя не должно содержать цифры и специальные символы</div>
+                                
                             </div> 
-                            <!-- <div class="_error">
-                                <span>Имя не должно содержать цифры и специальные символы</span>
-                            </div> -->
-
+                            
                             <div class="form__item">
                             <ladel class="form__item-label" for="phone">Введите номер телефона</ladel>
-                            <input class="form__item-input _req _phone" id="phone" name="phone" type="tel" placeholder="+7(9XX) XX-XX-XX">
+                            <input class="form__item-input _req _phone" id="phone" name="phone" type="tel" placeholder="+7(9XX) XX-XX-XX" >
+                            <div class="form__error errDisabled">Телефон должен быть заполнен и не должен содержать буквы</div>
                             </div> 
+                           
                             
                         
                             <div class="form__item">
@@ -882,45 +898,43 @@
                                 </label>
                                 <textarea class="form__item-area" id="formMessage" name="message" placeholder="Ваше сообщение"></textarea>
                             </div>
-                            <!-- <div class="errDisabled">Поле должно быть заполнено!</div> -->
+                           
                             <button class="button__primary form__item-submit" type="submit">Оставить заявку</button>
                             <div class="form__item">
-                                <div class="checkbox">
-                                    <input class="checkbox__input _req" id="checkbox-down"  checked type="checkbox" name="agreement" >
-                                    <label class="checkbox__label" for="checkbox-down">
-                                        <span>
-                                            Нажимая на кнопку, вы соглашаетесь на обработку своих персональных данных в соответствии с политикой конфиденциальности
-                                        </span>
-                                    </label>
-                                </div>    
+                    </div>
+                                <p class="form__agree">Нажимая на кнопку, вы соглашаетесь на обработку своих персональных данных в соответствии с <a>политикой конфиденциальности</a></p>
                             </div>
                         </form>
                         
                     </div>
-                    <p class="contacts__title">
-                        Или оставить заявку на бесплатную консультацию через форму обратной связи:
-                    </p>
-                    <div class="seti-links contacts__links">
-                        <a href="" class="contacts__link-item">
-                            <img src="./image/icon/VK.svg" alt="">
-                        </a>
-                        <a href="" class="contacts__link-item">
-                            <img src="./image/icon/YouTube.svg" alt="">
-                        </a>
 
+                    <div  class="contacts__down">
+                        <p class="contacts__title">
+                            Или оставить заявку на бесплатную консультацию через форму обратной связи:
+                        </p>
+                        <div class="seti-links contacts__links">
+                            <a href="" class="contacts__link-item">
+                                <img src="./image/icon/VK.svg" alt="">
+                            </a>
+                            <a href="" class="contacts__link-item">
+                                <img src="./image/icon/YouTube.svg" alt="">
+                            </a>
+    
+                        </div>
                     </div>
+                   
 
                 </div>
 
             </div>
         </div>
-    </section>
+    </section> 
 
 <!-- form itself -->
 <form id="send-form-mini" class="mfp-hide white-popup-block  send-form">
 	<p class="send-form__subtitle">Оставьте заявку и я свяжусь с  вам в ближайшее время</p>
 	<fieldset style="border:0;" class="send-form__content">
-		
+<!-- 		
         <div class="form__item">
             <ladel class="form__label" for="name">Как к вам обращаться</ladel>
             <input class="form__input _req" id="name" type="text" name="name" placeholder="Имя">
@@ -930,52 +944,43 @@
             <ladel class="form__label" for="phone">Введите номер телефона</ladel>
             <input class="form__input _req _email" id="phone" name="phone" type="tel" placeholder="+7(987) 654 32 10">
         </div>
-        <button class="heading__button button__primary form__buttons" type="submit">send</button>
+        <button class="heading__button button__primary form__buttons" type="submit">send</button> -->
 		
         <button id="mfp__go">hi</button>
 	</fieldset>
-</form>
+</form> 
 
 
-<form id="video-popup" class="mfp-hide white-popup-block">
+<!-- <form id="video-popup" class="mfp-hide white-popup-block">
 	<h1>Form</h1>
 	
 </form>
 
-<a  class="popup-with-title" href="#send-title">Open title</a>
-<div class="popup-gallery">
-	<a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" width="75" height="75"></a>
-	<a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Winter Dance"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg" width="75" height="75"></a>
-	<a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="The Uninvited Guest"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg" width="75" height="75"></a>
-	<a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="Oh no, not again!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg" width="75" height="75"></a>
-	<a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg" width="75" height="75"></a>
-	<a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="75" height="75"></a>
-	<a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg" width="75" height="75"></a>
-</div>
 
 
-<!-- <form class="form">
-    <div class="form__item">
-        <ladel class="form__item-label" for="firstName">Как вас зовут?</ladel>
-        <input class="form__item-input _req _email" id="firstName" type="text" name="firstName" placeholder="Имя">
+
+<form class="form-up">
+    <div class="form-up__item">
+        <ladel class="form-up__item-label" for="firstName">Как вас зовут?</ladel>
+        <input class="form-up__item-input _req _email" id="firstName" type="text" name="firstName" placeholder="Имя">
     </div> 
-   <div class="form__item">
-    <ladel class="form__item-label" for="phone">Введите номер телефона</ladel>
-    <input class="form__item-input _req _email" id="phone" name="phone" type="tel" placeholder="+7(9XX) XX-XX-XX">
+   <div class="form-up__item">
+    <ladel class="form-up__item-label" for="phone">Введите номер телефона</ladel>
+    <input class="form-up__item-input _req _email" id="phone" name="phone" type="tel" placeholder="+7(9XX) XX-XX-XX">
     </div> 
 
-    <div class="form__item">
-        <label for="formMessage" class="form__item-label">
+    <div class="form-up__item">
+        <label for="formMessage" class="form-up__item-label">
             Напишите мне сообщение
         </label>
-        <textarea class="form__item-area" id="formMessage" name="message" placeholder="Ваше сообщение"></textarea>
+        <textarea class="form-up__item-area" id="formMessage" name="message" placeholder="Ваше сообщение"></textarea>
     </div>
-    <button class="button__primary form__item-submit" type="submit">Оставить заявку</button>
+    <button class="button__primary form-up__item-submit" type="submit">Оставить заявку</button>
     <div class="form__agreement">
         
     </div>
-</form> -->
-
+</form>
+ -->
 
 
 </main>
@@ -994,11 +999,42 @@
 
             </div>
             <div class="footer__tel">
-                <img src="" alt="">
-                
+                <img src="./image/icon/call.svg" alt="tesl">
+                <p class="footer__tel-item">8 (930) 669-89-91</p>
+            </div>
+            <div class="footer__mail">
+                <img src="./image/icon/mail-mini.svg" alt="mail">
+                <p class="footer__mail-item">yanchiklebedeva1991@mail.ru</p>
             </div>
         </div>
-        <div class="footer__menu"></div>
+        <div class="footer__menu">
+            <div  class="menu-item">
+                <a href="#" class="footer__menu-subtitle">Главная</a>
+                <a href="#principles" class="footer__menu-text">Мои принципы</a>
+            </div>
+            <div class="menu-item">
+                <a href="#about" class="footer__menu-subtitle">О тренере</a>
+                <a href="" class="footer__menu-text">Моя фитнес история</a>
+                <a href="" class="footer__menu-text">Сертификаты</a>
+                <a href="#reviews" class="footer__menu-subtitle footer__menu-subtitle-two">Отзывы</a>
+
+            </div>
+            <div class="menu-item">
+                <a class="footer__menu-subtitle">Блог</a>
+                <a href="" class="footer__menu-text">Полезные статьи</a>
+                <a href="#workout" class="footer__menu-text">Видео-тренировки</a>
+                <a  href="#contacts" class="footer__menu-subtitle footer__menu-subtitle-two">Контакты</a>
+
+            </div>
+            <div href="" class="menu-item">
+                <a href="#price" class="footer__menu-subtitle">Услуги</a>
+                <a href="#questions" class="footer__menu-text">Какие тренировки я даю</a>
+                <a href="#price" class="footer__menu-text">Стоимость</a>
+                <a href="" class="footer__menu-text">Тренировочный процесс</a>
+                
+
+            </div>
+        </div>
     </div>
 </footer>
 
@@ -1007,7 +1043,7 @@
 <script src="./script/questions.js"></script>
 <script src="./script/block.js"></script>
 <script src="./script/agreement.js"></script>
-<script src="./script//slick/jquery.min.js"></script>
+<script src="./script/slick/jquery.min.js"></script>
 
 <script src="./script/jquery.magnific-popup.min.js"></script>
 

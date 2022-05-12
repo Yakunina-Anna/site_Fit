@@ -30,13 +30,47 @@ $(document).ready(function(){
         arrows:false,
         dots:false,
         adaptiveHeight:false, 
-        slidesToShow:4, 
-        slidesToScroll:3, 
-        speed:700,         
-        infinite: false,
+        slidesToShow:1, 
+         speed: 500,
+        centerMode: true,
+        variableWidth: true
         
         
     });
+    $('.education__certificate').slick({
+        initialSlide:0,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        appendArrows:$('.education__button'),
+        // arrows:false,
+        // dots:false,
+        // adaptiveHeight:false, 
+        // // centerMode: true,
+        // slidesToShow:1, 
+        // slidesToScroll:1, 
+        // speed:700,   
+        // // rows:2      
+        // // infinite: false,
+        
+        
+    });
+
+
+
+    // $('.about__sliders').slick({
+    //     arrows:false,
+    //     dots:false,
+    //     adaptiveHeight:false, 
+    //     slidesToShow:4, 
+    //     slidesToScroll:3, 
+    //     speed:700,         
+    //     infinite: false,
+        
+        
+    // });
 
 })
 

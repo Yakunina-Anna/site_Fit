@@ -13,7 +13,7 @@ input[type~="text"], input[type~="tel"], textarea
     @include center-column;
     max-width: 468px;
     &__item{
-        margin-bottom: 24px;
+        // margin-bottom: 24px;
         width: 100%;
         
     }
@@ -93,55 +93,73 @@ input[type~="text"], input[type~="tel"], textarea
           padding: 25px 153px;
     }
 
+    &__error{
+        @include xs;
+        color: #EB5757;
+        padding-top: 8px;
+        padding-bottom: 0;
+    }
 
-}
-.checkbox{
-    width: 100%;
-    box-sizing: border-box;
-    &__label{
+    &__agree{
         @include xs;
         color: $white-body;
-        display: inline-flex;
-        align-items: center;
-        position: relative;
+        margin-top: 25px;
+        
         cursor: pointer;
         & a{
-          background-color: green;  
+            color: green;  
         }
     }
-    &__input{
-        display: none;
-    }
 
-    &__input:checked+ .checkbox__label::after{
-        transform: scale(1);
-    }
-
-    &__label::before{
-        content: "";
-        align-self: start;
-        border: 3px solid $white-body;
-        border-radius: 3px;
-        flex: 0 0 32px;
-        height: 32px;
-        margin-right: 25px;
-    }
-    &__label::after{
-        content: "";
-        width: 13px;
-        height: 10px;
-        position: absolute;
-        z-index: 4;
-        top: 11px;
-        left: 9px;
-        background-image: url(../image/icon/checkbox/white.svg);
-        transform: scale(0);
-        transition: transform 0.5s ease 0s;
-    }
-    
 
 }
+// .checkbox{
+//     width: 100%;
+//     box-sizing: border-box;
+//     &__label{
+//         @include xs;
+//         color: $white-body;
+//         display: inline-flex;
+//         align-items: center;
+//         position: relative;
+//         cursor: pointer;
+//         box-sizing: border-box;
+//         & a{
+//           background-color: green;  
+//         }
+//     }
+//     &__input{
+//         display: none;
+//     }
 
+//     &__input:checked+ .checkbox__label::after{
+//         transform: scale(1);
+//     }
+
+//     &__label::before{
+//         content: "";
+//         align-self: start;
+//         border: 3px solid $white-body;
+//         border-radius: 3px;
+//         flex: 0 0 32px;
+//         height: 32px;
+//         margin-right: 25px;
+//     }
+//     &__label::after{
+//         content: "";
+//         width: 13px;
+//         height: 10px;
+//         position: absolute;
+//         z-index: 4;
+//         top: 11px;
+//         left: 9px;
+//         background-image: url(../image/icon/checkbox/white.svg);
+//         transform: scale(0);
+//         transition: transform 0.5s ease 0s;
+//     }
+    
+
+// }
 
 .errDisabled {
     visibility: hidden;
@@ -151,233 +169,4 @@ input[type~="text"], input[type~="tel"], textarea
     // margin: 8px 0 0px 20px;
 }
 
-
-
-// ._error{
-//     display: none;
-// }
-// .form__item-input._error{
-//    border-color: red;
-// }
-
-// .checkbox._error .checkbox__label::before{
-//     box-shadow: 0 0 15px red;
-// }
-
-// ._sending{
-    
-// }
-// .checkbox{
-//     &__label{
-//         display: inline-flex;
-//         align-items: center;
-//     }
-//     &__input{
-//         display: none;
-//     }
-//     &__label::before{
-//         align-self: start;
-//         content: "";
-//         flex: 0 0 24px;
-//         height: 24px;
-//         background-color: rgb(100, 46, 46);
-//         border-radius: 4px;
-//         margin-right: 10px;
-//     }
-
-//     &__label::before {
-//         align-self: start;
-//         content: "-";
-//         flex: 0 0 24px;
-//         height: 24px;
-//         // background-color: rgb(255, 255, 255);
-//         // border-radius: 4px;
-//         margin-right: 10px;
-//     }
-// }
-
-
-// .form-down{
-//     width: 100%;
-//     &__body{
-//         margin: 0 98px;
-//         padding: 48px 0 54px 0;
-//        @include center-column;
-//        align-items:flex-start;
-//     //    justify-content: center;
-//         background-color: $gray-fit;
-//         border-radius: 21px;
-//         position: relative;
-//         color: $white-body;
-//     }
-
-//     &__body::after{
-//         content: '';
-//         padding: 0;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         background: $black-fit url('../image/icon/loading.gif') center / 50px no-repeat;
-//         opacity: 0;
-//         visibility: hidden;
-//     }
-//     // &__title{
-
-
-//     // }
-//     &__item{
-//        margin-bottom: 24px;
-//        max-width: 471px;
-//     //    text-align: center;
-      
-
-//     }
-
-//     &__label{
-//         text-align: left;
-//         display: block;
-//     }
-//     // &__label{
-//     //     display: block;
-//     //     margin: 0 0 10px 0;
-//     // }
-//     // &__input{
-//     //     height: 50px;
-//     //     padding: 0 20px;
-//     //     border-radius: 5px;
-//     //     border: 0;
-//     //     width: 100%;
-//     //     box-sizing: border-box;
-//     // }
-//     // &__input:focus{
-//     //     box-shadow: 0 0 15px rgb(119, 105, 105);
-//     // }
-//     // &__input ._error{
-        
-//     // }
-
-    
-// }
-// .form__body._sending::after{
-//     opacity: 1;
-//     visibility: visible;
-// }
-
-// .form__input:focus{
-//     border: 1px solid $gray-fit;
-// }
-// .form__input._error{
-//     border: 1px solid #EB5757;
-// }
-
-
-
-// .textarea__input {
-//     min-height: 120px;
-//     resize: vertical;
-//     padding: 20px;
-// }
-
-
-
-// .checkbox{
-//     &__label{
-//         display: inline-flex;
-//         align-items: center;
-//     }
-//     &__input{
-//         display: none;
-//     }
-//     &__label::before{
-//         align-self: start;
-//         content: "";
-//         flex: 0 0 24px;
-//         height: 24px;
-//         background-color: rgb(100, 46, 46);
-//         border-radius: 4px;
-//         margin-right: 10px;
-//     }
-
-//     &__label::before {
-//         align-self: start;
-//         content: "-";
-//         flex: 0 0 24px;
-//         height: 24px;
-//         // background-color: rgb(255, 255, 255);
-//         // border-radius: 4px;
-//         margin-right: 10px;
-//     }
-// }
-
-
-//     &__close {
-//         width: 16px;
-//         height: 16px;
-//         position:absolute;
-//         display: flex;
-//         align-items: center;
-       
-//         cursor: pointer;
-//     }
-//      &__close-input{
-//          top: 5px;
-//          bottom: 0;
-//          right: 24px;
-//      }
-
-//      &__close-textarea {
-//          top: -40px;
-
-//          bottom: 0;
-//          right: 14px;
-//      }
-
-// }
-
-
-// .checkbox{
-//      position: absolute;
-//      z-index: -1;
-//      opacity: 0;
-    
-// }
-// .checkbox+label {
-//     display: inline-flex;
-//     align-items: center;
-//     user-select: none;
-//     &::before{
-//         box-sizing: border-box;
-//         content: '';
-//         display: inline-block;
-//         width: 32px;
-//         height: 32px;
-//         flex-shrink: 0;
-//         flex-grow: 0;
-//         border: 3px solid $gray-fit;
-//         border-radius: 0.25em;
-//         margin-right: 0.5em;
-//         background-repeat: no-repeat;
-//         background-position: center center;
-//         background-size: 50% 50%;
-        
-//     }
-// }
-// /* стили при наведении курсора на checkbox */
-// .checkbox:not(:disabled):not(:checked):hover+label::before {
-//     border-color: $green-fit;
-// }
-// .checkbox:not(:disabled):checked:hover+label::before {
-//     border-color: $green-fit;
-//     fill: $green-fit;
-// }
-
-// /* стили при нажатии на checkbox */
-// .checkbox:checked+label::before {
-//     border-color: $gray-fit;
-//     background-color: none;
-//     background-image: url("../../image/icon/Union.svg");
-//     fill: $green-fit;
-// }
 

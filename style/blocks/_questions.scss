@@ -69,12 +69,13 @@
         text-align: center;
         padding: 0 97px;
     }
+    & ol{
+        @include small;
+    }
     &__wrapper{
         width: 100%;
     }
     &__item-wrap {
-        
-        padding: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -86,25 +87,25 @@
         
     }
      &__item-img1 {
-        width: 490px;
-        height: 355px;
+        max-width: 490px;
+        max-height: 355px;
 
      }
 
     &__item-img2 {
-        width: 355px;
-        height: 389px;
+        max-width: 355px;
+        max-height: 389px;
 
     }
 
     &__item-img3 {
-        width: 456px;
-        height: 410px;
+        max-width: 456px;
+        max-height: 410px;
 
     }
     &__item-img4 {
-        width: 397px;
-        height: 362px;
+        max-width: 397px;
+        max-height: 362px;
 
     }
 
