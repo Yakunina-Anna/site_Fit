@@ -1492,12 +1492,6 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
-.reviews__inner {
-  background-image: url(../../image/bg-reviews.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 100px;
-}
-
 .reviews__title {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -1517,20 +1511,6 @@ input[type~="text"], input[type~="tel"], textarea {
   user-select: none;
 }
 
-.reviews__wrapper::after {
-  content: "";
-  width: 124px;
-  height: 94px;
-  background-image: url(../../image/reviews-obj.svg);
-  position: absolute;
-  top: -65px;
-  right: 50px;
-}
-
-.reviews__item-img {
-  padding-right: 28px;
-}
-
 .reviews__item-heading {
   max-width: 344px;
   display: -webkit-box;
@@ -1539,19 +1519,30 @@ input[type~="text"], input[type~="tel"], textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 28px;
   padding-bottom: 40px;
 }
 
-.reviews__item-heading img {
+.reviews__item-heading-content p {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 130%;
+}
+
+.reviews__item-heading-content span {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 120%;
+}
+
+.reviews__item-images {
+  padding-right: 28px;
   width: 120px;
   height: 120px;
 }
 
-.reviews__item-heading span {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 120%;
+.reviews__item-img {
+  width: 100%;
+  height: 100%;
 }
 
 .reviews__item-text {
@@ -1582,6 +1573,44 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .reviews__down-subtitle span {
   color: #4EAA40;
+}
+
+@media (min-width: 1244px) {
+  .reviews__inner {
+    background-image: url(../../image/bg-reviews.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100px;
+  }
+  .reviews__wrapper::after {
+    content: "";
+    width: 124px;
+    height: 94px;
+    background-image: url(../../image/reviews-obj.svg);
+    position: absolute;
+    top: -65px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 1243px) {
+  .reviews__item-heading {
+    padding-bottom: 47px;
+  }
+  .reviews__item-images {
+    padding-right: 28px;
+    width: 96px;
+    height: 96px;
+  }
+  .reviews__item-heading-content p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 130%;
+  }
+  .reviews__item-heading-content span {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 120%;
+  }
 }
 
 .slick-list {
@@ -2732,6 +2761,9 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .fixed {
     position: fixed;
+  }
+  .reviews__inner {
+    background-image: none;
   }
 }
 
