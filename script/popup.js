@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   $(document).on('click', '#mfp__go', function (e) {
     e.preventDefault();
-    console.log('hi');
+    
     // $.magnificPopup.close();
     $('#video-popup').magnificPopup({
       items: {
@@ -31,62 +31,62 @@ $(document).ready(function() {
    }).magnificPopup('open');
   });
 
-//   $('popup-with-title').magnificPopup({
-// 		delegate: 'a',
-// 		type: 'image',
-// 		tLoading: 'Loading image #%curr%...',
-// 		mainClass: 'mfp-img-mobile',
-// 		gallery: {
-// 			enabled: true,
-// 			navigateByImgClick: true,
-// 			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-// 		},
-// 		image: {
-// 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-// 			titleSrc: function(item) {
-// 				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-// 			}
-// 		}
-// 	});
-$('.popup-about').magnificPopup({
+$('.popup-about-diploma').magnificPopup({
 	preloader: false,
-	// type: 'inline',
-	// mainClass: 'about__popup',
+	mainClass: 'about__popup',
 	callbacks:{
 		open(){
-			const $diplom =$('.about__sliders');
-			if (!$diplom.hasClass('.slick-initialized')){
-				$diplom.slick({
-					arrows:false,
-					dots:false,
-					adaptiveHeight:false, 
-					slidesToShow:4, 
-					slidesToScroll:3, 
-					speed:700,         
-					infinite: false,
-				})
-			}
-			// $diplom.not('.slick-initialized')
-			// $diplom.slick('slickGoTo',+$(this).attr('index'))
+			
+				$("#diploma").owlCarousel({
+					margin:10,
+					loop:true,
+					autoWidth:true,
+					// items:4,
+					stagePadding: 20,
+					responsive:{
+						1240:{
+							items:2
+						},
+						768:{
+							items:1
+						}
+					}
+					
+				});
+			  
+			
 		}
-		,
-		// open:function(){
-		// 	$('.about__sliders').slick({
-		// 		arrows:false,
-		// 		dots:false,
-		// 		adaptiveHeight:false, 
-		// 		slidesToShow:4, 
-		// 		slidesToScroll:3, 
-		// 		speed:700,         
-		// 		infinite: false,
-				
-				
-		// 	});
-		// },
-		close:function(){
-			$('.about__sliders').not('.slick-initialized').slick()
-			// $('.about__sliders').slick('slickGoTo',+$(this).attr('index'))
+		
+	}
+
+})
+$('.popup-about-certif').magnificPopup({
+	preloader: false,
+	// type: 'inline',
+	mainClass: 'about__popup',
+	callbacks:{
+		open(){
+			
+				$("#certif").owlCarousel({
+					margin:10,
+					loop:true,
+					autoWidth:true,
+					// items:4,
+					stagePadding: 20,
+					responsive:{
+						1240:{
+							items:2
+						},
+						768:{
+							items:1
+						}
+					}
+					
+				});
+			  
+			
 		}
+		
 	}
 
 })

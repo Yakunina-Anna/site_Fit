@@ -8,23 +8,125 @@
     <link rel="stylesheet" href="./style/magnific-popup.css">
     <link rel="stylesheet" href="./style/style.css">
 
+    <link rel="stylesheet" href="./script/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./script/owlcarousel/owl.theme.default.min.css">
+
 </head>
 <body>
-<header>
-    <div class="container">
+<header class="header">
+    <div class="header__container">
         <div class="header__menu-inner">
             <div class="header__logo"><a href="#"><img class="header__logo-img" src="./image/logo/logoforlight.svg" alt=""></a></div>
+            
             <nav class="header__menu">
                 <ul class="header__menu-list">
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Главная</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="./about.html">О тренере</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" shref="./about.html">О тренере</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Блог</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Услуги</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Стоимость</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Отзывы</a></li>
                     <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
                 </ul>
+                <div class="burger"><span></span></div>
             </nav>
+            <div class="burger__menu">
+                <div class="burger__wrapper">
+                    <div class="burger__header">
+                            <div class="burger__inner">
+                                <div class="burger__logo">
+                                    <img class="header__logo-img" src="./image/logo/logofornight.svg" alt="">
+                                </div>
+                                <p class="burger__title">Фитнес-тренер<br>
+                                    Яна Лебедева</p>
+                            </div>
+                            <div class="adaptiv-close burger__close">
+                                
+                            </div>
+                            
+                    </div>
+                    <div class="burger__main">
+                        <nav class="burger__content">
+                            <ul class="burger__list">
+                                <li class="burger__item">
+                                    <a href="" class="burger__item-link">Главная</a>
+                                    <ul class="burger__sublist">
+                                        <li class="burger__subitem">
+                                            <a href="" class="buger__subitem-link">Мои принципы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="" class="burger__item-link">О тренере</a>
+                                    <ul class="burger__sublist">
+                                        <li class="burger__subitem">
+                                            <a href="" class="buger__subitem-link">Моя фитнес история</a>
+                                        </li>
+                                        <li class="burger__subitem">
+                                            <a href="" class="buger__subitem-link">Сертификаты</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="" class="burger__item-link">Блог</a>
+                                    <ul class="burger__sublist">
+                                        <li class="burger__subitem">
+                                            <a href="" class="buger__subitem-link">Полезные статьи</a>
+                                        </li>
+                                        <li class="burger__subitem">
+                                            <a href="" class="buger__subitem-link">Видео-тренировки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="" class="burger__item-link">Услуги</a>
+                                    <ul class="burger__sublist">
+                                        <li class="burger__subitem">
+                                            <a href="" class="buger__subitem-link">Какие тренировки я даю</a>
+                                        </li>
+                                        <li class="burger__subitem">
+                                            <a href="" class="buger__subitem-link">Тренировочный процесс</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="" class="burger__item-link">стоимость</a>
+                                </li>
+                                <li class="burger__item">
+                                    <a href="" class="burger__item-link">Отзывы</a>
+                                </li>
+
+                                <li class="burger__item">
+                                    <a href="" class="burger__item-link">контакты</a>
+                                </li>
+
+
+                            </ul>
+                        </nav>
+                        <div class="seti-links burger__seti-link">
+                            <a href="" class="contacts__link-item">
+                                <img src="./image/icon/VK_w.svg" alt="">
+                            </a>
+                            <a href="" class="contacts__link-item">
+                                <img src="./image/icon/YouTube_w.svg" alt="">
+                            </a>
+            
+                        </div>
+                        <div class="burger__tel burger__contact">
+                            <img src="./image/icon/call.svg" alt="tel">
+                            <a href="tel:+79306698991" class="burger__tel-item">8 (930) 669-89-91</a>
+                        </div>
+                        <div class="burger__mail burger__contact">
+                            <img src="./image/icon/mail-mini.svg" alt="mail">
+                            <a href="mailto:yanchiklebedeva1991@mail.ru" class="burger__mail-item">yanchiklebedeva1991@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+           
         </div>
     </div>
 </header>
@@ -32,18 +134,26 @@
      <section class="heading"> 
         <div class="container">
             <div class="heading__inner">
-                <h3 class="heading__subtitle-top">тренер по фитнесу яна лебедева</h3>
-                <h1 class="heading__title">Грамотный<br/>фитнес</h1>
-                <h2 class="heading__subtitle-bottom">с любовью к телу</h2>
+                <div class="heading__inner-content">
+                    <h3 class="heading__subtitle-top">тренер по фитнесу яна лебедева</h3>
+                    <h1 class="heading__title">Грамотный<br/>фитнес</h1>
+                    <h2 class="heading__subtitle-bottom">с любовью к телу</h2>
+                    <div class="heading__background-photo"><img src="./image/IMG_2130(4) 1@3x.png" alt=""></div>
+                    <div class="heading__background-circle"><img src="./image/Circle.svg" alt=""></div>
+                </div>
+                
+
+
                 <p class="heading__text">Двигайтесь! Грамотно, осознанно, с пользой и любовью к своему телу. Это изменит вашу жизнь к лучшему!</p>
-                <a  class="heading__button button__primary" href="#send-form-mini">Оставить заявку</a>
-                <div class="heading__background-photo"><img src="./image/IMG_2130(4) 1@3x.png" alt=""></div>
+                <div class="heading__btn"> <a  class="heading__button button__primary" href="#send-form-mini">Оставить заявку</a>
+                </div>
+               
                 
             </div>
         </div>
         
     </section> 
-    <section id="about" class="about lock-padding" id="about">
+     <section id="about" class="about lock-padding" id="about">
         <div class="container">
             <div class="inner about__inner">
                 <h2 class="title about__title">Привет, меня зовут <span>Лебедева Яна</span></h2>
@@ -54,19 +164,26 @@
                     <div class="about__content-item">
                         <img src="./image/icon/fitness-diplom.svg" alt="диплом фитнес тренера">
                         <p class="about__content-text">Выпускник университета физической культуры, спорта и здоровья им. П. Ф. Лесгафта</p>
-                        <a  href="#diploma" class="button__strocked about__content-button popup-about">Смотреть диплом</a>
+                        <a  href="#diploma" class="button__strocked about__content-button popup-about-diploma">Смотреть диплом</a>
                        
-                        <div id="diploma" class="mfp-hide">
-                            <div class="about__sliders">
-                                <div class="about__slider-item"></div>
-                                <div class="about__slider-item"></div>
-                                <div class="about__slider-item"></div>
-                                <div class="about__slider-item"></div>
-                                <div class="about__slider-item"></div>
-                                <div class="about__slider-item"></div>
-                            </div>
 
-                        </div>
+                        <div  id="diploma" class="owl-carousel">
+                            <div class="about__certificate-item">
+                                <img src="./image/diploms/diplom1.png" alt="диплом1">
+                             </div>
+                             <div class="about__certificate-item">
+                                 <img src="./image/diploms/diplom2.png" alt="диплом2">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/diploms/diplom3.png" alt="диплом3">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/diploms/diplom4.png" alt="диплом4">
+                             </div>
+                             
+                          </div>
+
+                          
                        
 
 
@@ -74,20 +191,51 @@
                     <div class="about__content-item">
                         <img src="./image/icon/fitness-trainer.svg" alt="о фитнес тренере">
                         <p class="about__content-text">Двукратный призёр соревнований по бодибилдингу в категории фитнес-бикини</p>
-                        <a class="button__strocked about__content-button">Читать о тренере</a>
+                        <a href="./about.html" class="button__strocked about__content-button">Читать о тренере</a>
                     </div>
                     <div class="about__content-item">
                         <img src="./image/icon/finess-certificate.svg" alt="сертификаты фитнес тренера">
                         <p class="about__content-text">Моя квалификация подтверждена сертификатами ведущих российских и международных школ</p>
-                        <a class="button__strocked about__content-button">Сертификаты</a>
+                        
+                        <a href="#certif" class="button__strocked about__content-button popup-about-certif">Сертификаты</a>
+
+                        <div  id="certif" class="owl-carousel">
+                            <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate1.png" alt="сертификат1">
+                             </div>
+                             <div class="about__certificate-item">
+                                 <img src="./image/certificate/certificate2.png" alt="сертификат2">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate3.png" alt="сертификат3">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate4.png" alt="сертификат4">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate5.png" alt="сертификат5">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate6.png" alt="сертификат6">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate7.png" alt="сертификат7">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate8.png" alt="сертификат8">
+                             </div>
+                             <div class="about__certificate-item">
+                                <img src="./image/certificate/certificate9.png" alt="сертификат9">
+                             </div>
+                          </div>
                     </div>
                    
                     
                 </div>
             </div>
         </div>
-    </section> 
-    <section class="principles" id="principles"> 
+    </section>  
+     <section class="principles" id="principles"> 
         
         <div class="container principles__container">
             <div class="principles__background-photo"><img src="./image/principles_yana/IMG_222723 1@3x.png" alt=""></div>
@@ -130,12 +278,12 @@
         </div>
 
 
-    </section>
-   <section class="questions" id="questions">
+    </section> 
+    <section class="questions" id="questions">
         <div class="container">
             <div class="inner questions__inner">
                 <h2 class="title questions__title">
-                    Какие тренировки я даю. Или как<br/>понять, что <span>вам — ко мне?</span>
+                    Какие тренировки я даю. Или как понять, что <span>вам — ко мне?</span>
                 </h2>
                 <p class="questions__text">
                     Мои подопечные разного возраста и пола. Вы можете обратиться ко мне, если вам подходят занятия, которые я даю. Мы обязательно подберём подходящий уровень нагрузки и вид тренировок. Если вы хотите здоровое и красивое тело, хотите чувствовать и понимать свой организм, ощущать лёгкость в движениях — вам ко мне.
@@ -308,7 +456,7 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>  
      <section class="workout" id="workout">
         <div class="container">
             <div class="inner workout__inner">
@@ -394,7 +542,7 @@
                 </button>
             </div>
         </div>
-    </section> 
+    </section>
  <section class="price" id="price">
         <div class="container">
             <div class="inner price__inner">
@@ -452,7 +600,7 @@
             </div>
         </div>
     </section> 
-<section class="reviews" id="reviews">
+ <section class="reviews" id="reviews">
         <div class="container">
             <div class="inner reviews__inner">
                 <h2 class="title reviews__title" >Отзывы</h2>
@@ -899,7 +1047,7 @@
                                 <textarea class="form__item-area" id="formMessage" name="message" placeholder="Ваше сообщение"></textarea>
                             </div>
                            
-                            <button class="button__primary form__item-submit" type="submit">Оставить заявку</button>
+                            <button class="button__primary btn-form  form__item-submit" type="submit">Оставить заявку</button>
                             <div class="form__item">
                     </div>
                                 <p class="form__agree">Нажимая на кнопку, вы соглашаетесь на обработку своих персональных данных в соответствии с <a>политикой конфиденциальности</a></p>
@@ -931,9 +1079,13 @@
     </section> 
 
 <!-- form itself -->
-<form id="send-form-mini" class="mfp-hide white-popup-block  send-form">
+<!-- <form id="send-form-mini" class="mfp-hide white-popup-block  send-form">
 	<p class="send-form__subtitle">Оставьте заявку и я свяжусь с  вам в ближайшее время</p>
 	<fieldset style="border:0;" class="send-form__content">
+		
+        <button id="mfp__go">hi</button>
+	</fieldset>
+</form>  -->
 <!-- 		
         <div class="form__item">
             <ladel class="form__label" for="name">Как к вам обращаться</ladel>
@@ -945,10 +1097,6 @@
             <input class="form__input _req _email" id="phone" name="phone" type="tel" placeholder="+7(987) 654 32 10">
         </div>
         <button class="heading__button button__primary form__buttons" type="submit">send</button> -->
-		
-        <button id="mfp__go">hi</button>
-	</fieldset>
-</form> 
 
 
 <!-- <form id="video-popup" class="mfp-hide white-popup-block">
@@ -984,7 +1132,7 @@
 
 
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="container footer__container">
         <div class="footer__contacts">
             <p class="footer__title">Lebedeva-fit.ru</p>
@@ -1000,11 +1148,11 @@
             </div>
             <div class="footer__tel">
                 <img src="./image/icon/call.svg" alt="tesl">
-                <p class="footer__tel-item">8 (930) 669-89-91</p>
+                <a href="tel:+79306698991" class="footer__tel-item">8 (930) 669-89-91</a>
             </div>
             <div class="footer__mail">
                 <img src="./image/icon/mail-mini.svg" alt="mail">
-                <p class="footer__mail-item">yanchiklebedeva1991@mail.ru</p>
+                <a href="mailto:yanchiklebedeva1991@mail.ru" class="footer__mail-item">yanchiklebedeva1991@mail.ru</a>
             </div>
         </div>
         <div class="footer__menu">
@@ -1036,7 +1184,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 
 
 
@@ -1046,9 +1194,10 @@
 <script src="./script/slick/jquery.min.js"></script>
 
 <script src="./script/jquery.magnific-popup.min.js"></script>
-
+<script src="./script/owlcarousel/owl.carousel.min.js"></script>
 
 <script src="./script/slick/slick/slick.min.js"></script>
+<script src="./script/burger.js"></script>
 <script src="./script/slider.js"></script>
 <script src="./script/popup.js"></script>
 

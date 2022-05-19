@@ -39,7 +39,7 @@
     }
      &__item {
          
-         max-width:370px;
+         width:370px;
      }
      &__item-description {
          margin-top: 24px;
@@ -57,5 +57,38 @@
    }
 
 
+}
+
+@media  (min-width:1244px) and (max-width:1420px){
+    .workout__item {
+        width:300px;
+    }
+}
+@media (max-width:1243px) {
+    .workout__inner{
+        margin-top: 0;
+   }
+
+   .workout__content {
+      @include  center-column;
+      margin-bottom: 0;
+   }
+   .workout__text{
+       @include sub1mob;
+       margin-bottom:36px;
+   }
+   .workout__item {
+      width:100%;
+     margin-bottom: 36px;
+
+   }
+   .workout__item-description {
+       margin-top: 16px;
+      @include mainmob;
+   }
+
+   .workout__video iframe{
+      height: 223px;
+   }    
 }
 

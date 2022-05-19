@@ -60,6 +60,7 @@
          
      }
     &__title{
+        max-width: 830px;
         margin-bottom: 71px;
     }
 
@@ -68,6 +69,10 @@
         margin-bottom: 27px;
         text-align: center;
         padding: 0 97px;
+    }
+
+    &__item-text{
+        width: 100%;
     }
     & ol{
         @include small;
@@ -110,7 +115,6 @@
     }
 
     &__item-title {
-        @include main;
         @include subtitle2;
         padding-bottom: 24px;
         color: $green-fit;
@@ -152,4 +156,101 @@
     to {
         opacity: 1
     }
+}
+@media  (min-width:1244px) and (max-width:1420px){
+    .accordeon__heading{
+        font-weight: 500;
+        font-size: 25px !important; 
+        line-height: 120%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .questions__item-wrap{
+        padding: 0 36px;
+    }
+    .questions__item-img1 {
+        max-width: 442px;
+
+     }
+     .questions__item-img3 {
+        max-width: 436px;
+
+     }
+}
+@media (max-width:1243px){
+    .questions__title{
+        margin-bottom: 48px;
+        max-width: 479px;
+    }
+
+    .questions__text {
+        @include mainmob;
+        margin-bottom: 32px;
+        text-align: left;
+        padding: 0 ;
+    }
+    .accordeon__heading{
+        @include subtitle2mob;
+        padding: 16px 0;
+        padding-right: 97px;
+        
+        
+    }
+    
+    .accordeon__heading::after {
+       
+        right: 0px;
+    }
+
+    .accordeon__list .active {
+        padding-bottom: 0px;
+    }
+    .active+.accordeon__inner{
+        box-shadow: 0px 5px 20px -1px rgba(22, 164, 1, 0.25);
+    }
+
+    .questions__item-wrap {
+        @include center-column;
+        padding: 16px 29px 27px 29px;
+        height: 100%;
+
+        
+    }
+    .questions__item-title{
+        @include subtitle2mob;
+        margin-top: 42px;
+        padding-bottom: 16px;
+        text-align: center;
+    }
+    .questions ol{
+        @include mainmob;
+        text-align: left;
+    }
+    .questions__item-img{
+        width: fit-content;
+    }
+    .questions__item-img1 {
+        max-width: 305px;
+        max-height: 192px;
+
+     }
+     .questions__item-img2 {
+        max-width: 193px;
+        max-height: 209px;
+
+    }
+
+    .questions__item-img3 {
+        max-width: 243px;
+        max-height: 211px;
+
+    }
+    .questions__item-img4 {
+        max-width: 205px;
+        max-height: 184px;
+
+    }
+
+
+
 }

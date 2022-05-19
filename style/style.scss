@@ -18,7 +18,8 @@
 // Нижняя форма отправки
 @import "./_formDown.scss";
 
-
+//Burger menu
+@import "./_burger.scss";
 // // form
 // @import "blocks/forms";
 
@@ -58,6 +59,7 @@
 
 // Отдельные стили для страницы "Обо мне"
 @import  "blocks/style_about/_about";
+@import "blocks/style_about/media-history.scss";
 // Отдельные стили для страницы "Блог"
 @import  "blocks/style_blog/_blogs";
 // Отдельные стили для страницы "каждый отдельный блог"

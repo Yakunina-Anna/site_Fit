@@ -55,7 +55,7 @@
   display: none; }
 
  .mfp-content {
-    padding: 52px 57px 40px 57px;
+    /* padding: 52px 57px 40px 57px; */
   position: relative;
   display: inline-block;
   vertical-align: middle;

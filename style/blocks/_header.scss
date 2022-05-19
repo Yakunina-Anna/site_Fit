@@ -3,6 +3,11 @@
 
 
 .header{
+    &__container{
+        max-width: 1152px;
+        margin: 0 auto;
+        padding:0 144px;
+    }
     &__menu-inner{
         display: flex;
         justify-content: space-between;
@@ -50,6 +55,9 @@
         color: $green-fit;
     }
 
-
+    
 
 }
+
+
+

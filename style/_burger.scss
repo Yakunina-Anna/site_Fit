@@ -1,0 +1,92 @@
+.burger{
+    display: none;
+
+    &__menu{
+        display: none;
+    }
+    &__wrapper{
+        width: 282px;
+        position: absolute;
+        z-index: 51;
+        top: 0;right: 0;
+        padding: 16px 19px;
+        background: $gray-fit;
+        border-radius: 0px 0px 0px 10px;
+        color: $white-body;
+    }
+    &__header{
+
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+    }
+    &__inner{
+        display: flex;
+        align-items:center;
+    }
+
+   
+    &__logo{
+        width: 65px;
+        height: 58px;
+        margin-right: 13px;
+    }
+
+    &__title{
+        font-weight:500;
+        font-size: 18px;
+        line-height: 120%;
+    }
+    &__main{
+        margin-top: 32px;
+        @include center-column;
+        align-items: flex-start;
+    }
+    &__item{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 18px;
+    }
+    &__item:first-child{
+        margin-bottom:25px;
+    }
+    &__sublist{
+        margin-top: 8px;
+    }
+    &__subitem{
+        text-transform:none;
+        @include mainmob;
+        color: $lightgray;
+    }
+    &__subitem:not(:last-child){
+        margin-bottom: 6px;
+    }
+
+    &__seti-link{
+        margin: 25px 0;
+    }
+    &__contact{
+        display: flex;
+        align-items: center;
+    }
+    &__tel{
+        margin-bottom: 5px;
+    }
+
+    &__tel-item{
+        margin-left: 11px;
+        @include main;
+    }
+    &__mail-item{
+        margin-left: 11px;
+        @include smallmob
+    }
+
+
+
+
+}

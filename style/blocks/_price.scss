@@ -35,7 +35,6 @@
         height: 140px;
     }
     &__item-title{
-        // max-width: 271px;
         @include main;
         padding-bottom: 35px;
         min-height: 54px
@@ -62,5 +61,73 @@
 
 
 
+
+}
+
+@media  (min-width:1244px) and (max-width:1420px){
+    .price__content{
+        grid-column-gap: 20px;
+     }
+     .price__item{
+        padding: 160px 2px 40px 2px;
+     }
+}
+@media  (max-width:1243px){
+    .price{
+
+        &__title {
+            margin-bottom: 48px;
+
+        }
+        &__content{
+            grid-template-columns: repeat(1,1fr);
+            grid-row-gap: 70px;
+        }
+
+        &__item{
+            margin: 0 auto;
+            max-width: 359px;
+            // position: relative;
+            padding: 16px 44px 24px 44px;
+            background-color: $white-body;
+            box-shadow: 0px 4px 34px rgba(181, 181, 181, 0.21);
+            border-radius: 10px;
+            @include center-column;
+            text-align: center;
+        }
+        &__img {
+            position:static;
+            margin-bottom: 28px;
+        }
+        &__item-title{
+            @include subtitle2mob;
+            padding-bottom: 14px;
+            min-height: 44px
+        }
+        &__item-subtitle {
+            @include mainmob;
+            padding-bottom: 14px;
+    
+        }
+        &__item-value{
+            @include h2mob;
+            
+            padding-bottom: 21px;
+            img{
+                padding-left: 4px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    
+        &__item-explanation{
+            @include smallmob
+        }
+    }
+}
+@media (min-width:1024px) and (max-width:1243px){
+
+}
+@media (min-width:768px) and (max-width:1024px){
 
 }

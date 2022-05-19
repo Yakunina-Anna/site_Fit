@@ -5,20 +5,36 @@
     // height: 900px;
     &__inner{
         padding-top: 103px;
-        position: relative;
-        background-image: url(../../image/Circle.svg);
-        background-size: 457px;
-        background-repeat:no-repeat;
-        background-position: 100% 176px;
+        // position: relative;
+       
+       
     }
+
+    &__inner-content{
+        position: relative;
+    }
+
     &__background-photo{
         overflow: hidden;
         max-width: 660px;
         max-height: 661px;
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         left:503px;
-        top:204px;
+        top:103px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__background-circle{
+        overflow: hidden;
+        max-width: 471px;
+        max-height: 471px;
+        position: absolute;
+        z-index: 2;
+        left:683px;
+        top:73px;
         img{
             width: 100%;
             height: 100%;
@@ -47,10 +63,8 @@
         
     }
     &__title{
-        // color: $gray-fit;
-       
-       @include title-h1;
-       margin-bottom: 20px;
+        @include title-h1;
+        margin-bottom: 20px;
         
     }
     &__subtitle-bottom{
@@ -62,6 +76,9 @@
         width: 376px;
         margin-bottom: 41px;
         @include subtitle3;
+    }
+    &____btn{
+        display: inline-block;
     }
     &__button{
        @include main;

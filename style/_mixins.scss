@@ -60,5 +60,42 @@
      font-size: 14px;
      line-height: 120%;
 }
-
-
+@mixin h1mob{
+     font-family: 'Playfair Display',
+     serif;
+     font-weight: 900;
+     font-size: 56px;
+     line-height: 120%;
+}
+@mixin h2mob{
+     font-family: 'Playfair Display',
+     serif;
+     font-weight: 900;
+     font-size: 32px;
+     line-height: 100%;
+}
+@mixin h3mob{
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 120%;
+}
+@mixin subtitle2mob{
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 130%;
+}
+@mixin mainmob{
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 130%;
+}
+@mixin smallmob{
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 120%;
+}
+@mixin sub1mob{
+     font-weight: 500;
+     font-size: 21px;
+     line-height: 110%;
+}
