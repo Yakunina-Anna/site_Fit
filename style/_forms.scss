@@ -113,6 +113,17 @@ input[type~="text"], input[type~="tel"], textarea
 
 
 }
+
+@media (max-width:1024px) {
+    .form{
+        padding: 0 24px;
+        &__item-label{
+            @include mainmob;
+        }
+    }
+    
+    
+}
 // .checkbox{
 //     width: 100%;
 //     box-sizing: border-box;

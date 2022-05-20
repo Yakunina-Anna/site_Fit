@@ -90,9 +90,7 @@
 
 
 }
-@media  (min-width:1024px) and (max-width:1243px){
 
-}
 @media  (min-width:768px) and (max-width:1243px){
     .container{
         padding: 0 112px;
@@ -156,7 +154,19 @@
 
     
 }
-
+@media  (min-width:768px) and (max-width:1024px){
+    .heading{
+        &__inner{
+            align-items: flex-start;
+        }
+        &__text{
+            margin: 0 auto;
+        }
+        &__btn{
+            margin: 48px auto 0 auto;
+        }
+    }
+}
 @media (max-height:800px){
     .burger__menu.open-menu{
         overflow-y: scroll;

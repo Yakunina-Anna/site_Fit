@@ -1,3 +1,10 @@
+@media (max-width: 1024px) {
+    .button{
+        &__primary {
+            @include sub1mob
+        }
+    }
+}
 .button {
     cursor: pointer;
     &__primary {

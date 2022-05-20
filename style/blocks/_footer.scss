@@ -1,6 +1,6 @@
 .footer{
     background-color: $gray-fit;
-    height: 430px;
+    min-height: 430px;
     color: $white-body;
     padding-top: 68px;
     &__container{
@@ -47,30 +47,122 @@
         } 
     }
 
+        &__menu{
+            margin-left: 98px;
+            display: grid;
+            grid-template-columns: 137px 137px 137px 167px;
+            grid-auto-rows: 120px;
+            // grid-row-gap: 6px;
+            grid-column-gap: 60px;
+           
+            & a{
+                display: block;
+            }
+        }
+        &__menu-item:nth-child(5) {
+            grid-column: 2/3;
+        }
+        &__menu-item:nth-child(6) {
+            grid-column: 3/4;
+        }
+        &__menu-subtitle{
+            @include main;
+            margin-bottom: 13px;
+        }
+
+       
+        &__menu-text{
+            @include xs;
+            margin-bottom: 10px;
+        }
+
+    // &__menu{
+    //     margin-left: 98px;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     width: 100%;
+    //     & a{
+    //         display: block;
+    //     }
+    // }
+    // &__menu-subtitle{
+    //     @include main;
+    //     margin-bottom: 13px;
+    // }
+
+    // &__menu-subtitle-two{
+       
+    //     margin-top: 36.6px;
+    // }
+    // &__menu-text{
+    //     @include xs;
+    //     margin-bottom: 10px;
+    // }
 
 
-    &__menu{
-        margin-left: 98px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        & a{
-            display: block;
+}
+
+@media (max-width:1243px) {
+    .footer{
+        &__container{
+            text-align:center;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title{
+            text-align:center;
+            @include sub1mob
+        }
+        &__subtitle{
+            text-align:center;
+           @include mainmob
+        }
+
+        &__links{
+
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+    
+        &__tel{
+            margin: 0 auto 8px auto;
+            align-items: center;
+            @include main;
+            & img{
+                width: 18px;
+                height: 18px;
+                padding-right: 11px;
+            } 
+        }
+    
+        &__mail{
+            align-items: center;
+            @include smallmob;
+            margin: 0 auto 28px auto;
+            & img{
+                width: 20px;
+                height: 20px;
+                padding-right: 8px;
+            } 
+        }
+
+        &__menu{
+            text-align: left;
+            margin-left: 0px;
+            grid-template-columns: 117px 140px;
+            grid-auto-rows: 120px;
+            // grid-row-gap: 6px;
+            grid-column-gap: 60px;
+           
+            & a{
+                display: block;
+            }
+        }
+        &__menu-item:nth-child(5) {
+            grid-column: 1/2;
+        }
+        &__menu-item:nth-child(6) {
+            grid-column: 2/3;
         }
     }
-    &__menu-subtitle{
-        @include main;
-        margin-bottom: 13px;
-    }
-
-    &__menu-subtitle-two{
-       
-        margin-top: 36.6px;
-    }
-    &__menu-text{
-        @include xs;
-        margin-bottom: 10px;
-    }
-
-
 }

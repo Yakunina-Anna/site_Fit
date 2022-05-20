@@ -160,12 +160,31 @@ input[type~="text"], input[type~="tel"], textarea {
   color: green;
 }
 
+@media (max-width: 1024px) {
+  .form {
+    padding: 0 24px;
+  }
+  .form__item-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
 .errDisabled {
   visibility: hidden;
 }
 
 .errEnabled {
   visibility: visible;
+}
+
+@media (max-width: 1024px) {
+  .button__primary {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+  }
 }
 
 .button {
@@ -299,8 +318,45 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .btn-form {
   text-align: center;
-  padding: 24px 152px;
+  padding: 24px 150px;
   margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+  .form-down {
+    position: relative;
+    width: 82%;
+    background-color: #444B59;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .form-down__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .btn-form {
+    text-align: center;
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 115px;
+  }
 }
 
 .burger {
@@ -797,7 +853,7 @@ input[type~="text"], input[type~="tel"], textarea {
   margin-bottom: 56px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .principles__grid {
     width: 100%;
     display: -ms-grid;
@@ -1594,7 +1650,10 @@ input[type~="text"], input[type~="tel"], textarea {
 
 @media (max-width: 1243px) {
   .reviews__item-heading {
-    padding-bottom: 47px;
+    padding-bottom: 29px;
+  }
+  .reviews__title {
+    margin-top: 0px;
   }
   .reviews__item-images {
     padding-right: 28px;
@@ -1602,14 +1661,19 @@ input[type~="text"], input[type~="tel"], textarea {
     height: 96px;
   }
   .reviews__item-heading-content p {
-    font-weight: 400;
-    font-size: 21px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 130%;
   }
   .reviews__item-heading-content span {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 120%;
+  }
+  .reviews__down-subtitle {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
   }
 }
 
@@ -1666,16 +1730,25 @@ input[type~="text"], input[type~="tel"], textarea {
   background-color: #F3FFF4;
 }
 
-.contacts__container {
-  position: relative;
-  background-image: url(../../image//contacts-image.png);
-  background-repeat: no-repeat;
-  background-size: 532px;
-  background-position: 760px 43px;
+.contacts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .contacts__inner {
-  margin-bottom: 100px;
+  width: 100%;
+}
+
+.contacts__images {
+  width: 532px;
+}
+
+.contacts__images img {
   width: 100%;
 }
 
@@ -1777,9 +1850,79 @@ input[type~="text"], input[type~="tel"], textarea {
           align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .contacts h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .contacts__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__images {
+    width: 272px;
+  }
+  .contacts__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 322px;
+    margin: 0 auto;
+  }
+  .contacts__item img {
+    padding-right: 24px;
+  }
+  .contacts__item:first-child {
+    margin-top: 48px;
+    padding-bottom: 33px;
+  }
+  .contacts__item-subtitle {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    padding-bottom: 14px;
+  }
+  .contacts__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .contacts__subtitle {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .contacts__msg {
+    margin: 0 auto;
+  }
+  .contacts__title {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    text-align: center;
+    max-width: 763px;
+  }
+  .contacts__links {
+    margin-top: 24px;
+  }
+}
+
 .footer {
   background-color: #444B59;
-  height: 430px;
+  min-height: 430px;
   color: #FFFFFF;
   padding-top: 68px;
 }
@@ -1842,17 +1985,28 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .footer__menu {
   margin-left: 98px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 137px 137px 137px 167px;
+      grid-template-columns: 137px 137px 137px 167px;
+  grid-auto-rows: 120px;
+  grid-column-gap: 60px;
 }
 
 .footer__menu a {
   display: block;
+}
+
+.footer__menu-item:nth-child(5) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.footer__menu-item:nth-child(6) {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
 }
 
 .footer__menu-subtitle {
@@ -1862,15 +2016,89 @@ input[type~="text"], input[type~="tel"], textarea {
   margin-bottom: 13px;
 }
 
-.footer__menu-subtitle-two {
-  margin-top: 36.6px;
-}
-
 .footer__menu-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
   margin-bottom: 10px;
+}
+
+@media (max-width: 1243px) {
+  .footer__container {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+  }
+  .footer__subtitle {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .footer__links {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .footer__tel {
+    margin: 0 auto 8px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 130%;
+  }
+  .footer__tel img {
+    width: 18px;
+    height: 18px;
+    padding-right: 11px;
+  }
+  .footer__mail {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    margin: 0 auto 28px auto;
+  }
+  .footer__mail img {
+    width: 20px;
+    height: 20px;
+    padding-right: 8px;
+  }
+  .footer__menu {
+    text-align: left;
+    margin-left: 0px;
+    -ms-grid-columns: 117px 140px;
+        grid-template-columns: 117px 140px;
+    grid-auto-rows: 120px;
+    grid-column-gap: 60px;
+  }
+  .footer__menu a {
+    display: block;
+  }
+  .footer__menu-item:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .footer__menu-item:nth-child(6) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
 }
 
 .container {
@@ -2842,6 +3070,20 @@ input[type~="text"], input[type~="tel"], textarea {
     line-height: 110%;
     padding: 26px 97px;
     margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading__inner {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .heading__text {
+    margin: 0 auto;
+  }
+  .heading__btn {
+    margin: 48px auto 0 auto;
   }
 }
 

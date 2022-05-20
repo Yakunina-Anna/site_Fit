@@ -36,6 +36,34 @@ visibility: visible;
 }
 .btn-form{
     text-align: center;
-padding: 24px 152px;
+padding: 24px 150px;
 margin-top: 24px;
+}
+
+@media (max-width:1024px){
+
+    .form-down{
+    position: relative;
+     width: 82%;
+     background-color: $gray-fit;
+     border-radius: 10px;
+     @include center-column;
+     color: $white-body;
+     margin-top: 24px;
+     margin-bottom: 48px;
+     padding-top: 28px;
+     padding-bottom: 28px;
+     &__title{
+        @include h3mob;
+        text-transform:uppercase;
+        margin-bottom: 40px;
+     }
+    }
+
+    .btn-form{
+        text-align: center;
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 115px;
+    }
 }

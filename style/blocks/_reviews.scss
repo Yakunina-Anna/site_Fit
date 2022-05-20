@@ -111,22 +111,28 @@
     .reviews{
         &__item-heading{
             // max-width: 268px;
-            padding-bottom:47px;
+            padding-bottom:29px;
         }
+        &__title {
+            margin-top:0px;}
         &__item-images{
-            padding-right:28px;                                     width: 96px;
+            padding-right:28px;                                     
+            width: 96px;
             height: 96px;             
         }
         &__item-heading-content{
             & p{
-                @include main;
+                @include subtitle2mob;
             }
             & span{
-                @include small
+                @include smallmob
             }
         }
+        &__down-subtitle {
+            @include sub1mob;
+        }
        
-           }
+    }
     
    
 }
