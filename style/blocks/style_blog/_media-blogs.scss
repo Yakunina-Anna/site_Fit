@@ -1,0 +1,142 @@
+@media (min-width:902px) {
+    .blogs__content-info:nth-child(1) {
+        
+        & img{
+            width:100%;
+            height:100%;
+        }
+    }
+}
+
+
+
+@media  (max-width:1244px){
+    .blogs__container{
+        padding: 0 19px !important
+    }
+    .workout-blog{
+        &__content {
+            @include  center-column;
+            margin-bottom: 0;
+        }
+        
+        &__item {
+            width:100%;
+        }
+        &__video iframe{
+           height: 223px;
+        }    
+
+        
+    }
+}
+@media  (min-width:768px) and (max-width:1243px){
+    
+    .blog-title{
+        @include h1mob
+    }
+    .blogs{
+        &__container{
+            background:none;
+            padding: 0 19px !important;
+        }
+        &__inner{
+            padding: 64px 0 64px 0;
+        }
+        &__title{
+            margin-bottom: 32px;
+        }
+        &__info-context{
+            padding-left: 15px;
+        }
+        &__info-subtitle{
+            @include mainmob
+        }
+        &__info-text{
+            @include smallmob
+        }
+        &__subtitle{
+            @include h2mob;
+            margin: 40px 0 32px 0;
+        }
+       
+
+    }
+    .workout-blog{
+        
+        &__title{
+            margin-bottom: 32px;
+        }
+        &__text{
+            @include sub1mob;
+            margin-bottom: 32px;
+        }
+        &__item-description {
+            margin-top: 16px;
+           @include mainmob;
+        }
+        &__item {
+            margin-bottom: 36px;
+            & a{
+                margin-top: -8px;
+                @include smallmob
+            }
+      
+        }
+        &__button-open{
+            padding: 21px 120px;
+        }
+        &__button-close{
+            padding: 21px 152px;
+        }
+          
+
+        
+    }
+}
+@media  (min-width:902px) and (max-width:1243px){
+    
+    .blogs{
+      
+        &__content{
+            grid-row-gap: 35px;
+            margin-bottom: 40px;
+        }
+        &__content-text{
+            @include subtitle2mob;
+        }
+    }
+   
+}
+@media  (min-width:768px) and (max-width:901px){
+   
+    .blogs{
+        
+
+        &__content{
+            grid-template-columns: 1fr;
+            grid-auto-rows: 291px;
+            grid-column-gap: 0px;
+            grid-row-gap: 80px;
+            margin-bottom: 40px;
+        }
+        &__content-item{
+            
+            grid-auto-rows: 291px;
+            grid-column-gap: 14px;
+        }
+        &__content-info:nth-child(1) {
+        
+            & img{
+                
+               height: 100%;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+        }
+        &__content-text{
+            @include main;
+        }
+    }
+    
+}

@@ -77,7 +77,6 @@
     }
     &__img{
         width:100%;
-        height:100%;
     }
     &__image-item{
         @include small
@@ -89,22 +88,11 @@
     &__grid{ 
         width: 100%; 
         display: grid;
-        grid-template-columns: repeat(12,1fr);
-        grid-column-gap: 32px;
-        grid-row-gap: 20px;
+        
     }
     &__grid-item{
     }
-    &__grid-item:nth-child(1) {
-        
-        grid-column: 1/6;
-    }
-     &__grid-item:nth-child(2) {
-         grid-column: 6/13;
-     }
-    &__grid-item:nth-child(3){
-        grid-column: 3/11;
-    }
+    
     &__title{
         
         margin-bottom: 24px;
@@ -134,25 +122,7 @@
         grid-column-gap: 20px;
         grid-row-gap: 26px;
     }
-    &__grid-item{
-    }
-    &__grid-item:nth-child(1){
-        grid-column: 3/11;
-        text-align: center;
-    }
-    &__grid-item:nth-child(2) {
-        
-        grid-column: 1/7;
-    }
-    &__grid-item:nth-child(3) {
-         grid-column: 7/13;
-         grid-row: span 2;
-    }
-
-    &__grid-item:nth-child(4) {
-        grid-column: 1/7;
-   }
-    
+   
     &__title{
         margin-bottom: 30px;
     }
@@ -164,6 +134,7 @@
     &__img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -176,26 +147,6 @@
         &__grid{ 
             width: 100%; 
             display: grid;
-            grid-template-columns: repeat(12,1fr);
-            grid-column-gap: 20px;
-            grid-row-gap: 72px;
-        }
-        &__grid-item{
-        }
-        &__grid-item:nth-child(1){
-            grid-column: 3/11;
-        }
-        &__grid-item:nth-child(2) {
-            grid-column: 3/11;
-        }
-        &__grid-item:nth-child(3) {
-            grid-column: 1/5;
-        }
-        &__grid-item:nth-child(4) {
-            grid-column: 6/13;
-        }
-        &__grid-item:nth-child(5) {
-            grid-column: 3/11;
         }
        
         &__content{
@@ -216,9 +167,7 @@
         }
 
        
-        &__quote-one{
-            margin: 40px 0 64px 0;
-        }
+       
         &__quote-two{
             margin-top:19px;
             ul{
@@ -243,6 +192,7 @@
     background-color: $green-body;
     &__container{
         max-width: 1440px;
+        padding: 0 19px;
         margin: 0 auto;
     }
     &__title{
@@ -253,7 +203,7 @@
        
     }
     &__item .slick-slide{
- padding-left: 20px;
+        padding-left: 20px;
     }
     &__item-subtitle{
         margin-bottom: 32px;

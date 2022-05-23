@@ -179,14 +179,6 @@ input[type~="text"], input[type~="tel"], textarea {
   visibility: visible;
 }
 
-@media (max-width: 1024px) {
-  .button__primary {
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 110%;
-  }
-}
-
 .button {
   cursor: pointer;
 }
@@ -266,6 +258,14 @@ input[type~="text"], input[type~="tel"], textarea {
 .button__strocked:active {
   border: 4px solid #444B59;
   color: #444B59;
+}
+
+@media (pointer: coarse) {
+  .button__primary {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+  }
 }
 
 .form-down {
@@ -2047,6 +2047,7 @@ input[type~="text"], input[type~="tel"], textarea {
     line-height: 130%;
   }
   .footer__links {
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 25px;
   }
@@ -2083,8 +2084,8 @@ input[type~="text"], input[type~="tel"], textarea {
     margin-left: 0px;
     -ms-grid-columns: 117px 140px;
         grid-template-columns: 117px 140px;
-    grid-auto-rows: 120px;
-    grid-column-gap: 60px;
+    grid-auto-rows: 112px;
+    grid-column-gap: 24px;
   }
   .footer__menu a {
     display: block;
@@ -2098,6 +2099,18 @@ input[type~="text"], input[type~="tel"], textarea {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
+  }
+  .footer__menu-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 8px;
+  }
+  .footer__menu-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    margin-bottom: 8px;
   }
 }
 
@@ -2274,7 +2287,6 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .about-todes__img {
   width: 100%;
-  height: 100%;
 }
 
 .about-todes__image-item {
@@ -2291,28 +2303,6 @@ input[type~="text"], input[type~="tel"], textarea {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 32px;
-  grid-row-gap: 20px;
-}
-
-.first-trener__grid-item:nth-child(1) {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
-}
-
-.first-trener__grid-item:nth-child(2) {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 7;
-  grid-column: 6/13;
-}
-
-.first-trener__grid-item:nth-child(3) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 8;
-  grid-column: 3/11;
 }
 
 .first-trener__title {
@@ -2347,32 +2337,6 @@ input[type~="text"], input[type~="tel"], textarea {
   grid-row-gap: 26px;
 }
 
-.pilates-trener__grid-item:nth-child(1) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 8;
-  grid-column: 3/11;
-  text-align: center;
-}
-
-.pilates-trener__grid-item:nth-child(2) {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1/7;
-}
-
-.pilates-trener__grid-item:nth-child(3) {
-  -ms-grid-column: 7;
-  -ms-grid-column-span: 6;
-  grid-column: 7/13;
-  grid-row: span 2;
-}
-
-.pilates-trener__grid-item:nth-child(4) {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-column: 1/7;
-}
-
 .pilates-trener__title {
   margin-bottom: 30px;
 }
@@ -2387,6 +2351,8 @@ input[type~="text"], input[type~="tel"], textarea {
 .pilates-trener__img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .my-practice {
@@ -2401,40 +2367,6 @@ input[type~="text"], input[type~="tel"], textarea {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 72px;
-}
-
-.my-practice__grid-item:nth-child(1) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 8;
-  grid-column: 3/11;
-}
-
-.my-practice__grid-item:nth-child(2) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 8;
-  grid-column: 3/11;
-}
-
-.my-practice__grid-item:nth-child(3) {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1/5;
-}
-
-.my-practice__grid-item:nth-child(4) {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 7;
-  grid-column: 6/13;
-}
-
-.my-practice__grid-item:nth-child(5) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 8;
-  grid-column: 3/11;
 }
 
 .my-practice__content {
@@ -2455,10 +2387,6 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .my-practice__text:last-child {
   margin-bottom: 0;
-}
-
-.my-practice__quote-one {
-  margin: 40px 0 64px 0;
 }
 
 .my-practice__quote-two {
@@ -2489,6 +2417,7 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .education__container {
   max-width: 1440px;
+  padding: 0 19px;
   margin: 0 auto;
 }
 
@@ -2576,9 +2505,382 @@ input[type~="text"], input[type~="tel"], textarea {
   background: url(../../image/reviews/icon/reviews_next-disable.svg) 0 0/100% no-repeat;
 }
 
+@media (min-width: 1244px) {
+  .about-todes__title-adaptiv {
+    display: none;
+  }
+  .first-trener__grid {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 20px;
+  }
+  .first-trener__grid-item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/6;
+  }
+  .first-trener__grid-item:nth-child(2) {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 7;
+    grid-column: 6/13;
+  }
+  .first-trener__grid-item:nth-child(3) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+  .first-trener__title {
+    margin-bottom: 24px;
+  }
+  .first-trener__text {
+    margin-bottom: 18px;
+  }
+  .first-trener__text:last-child {
+    margin-bottom: 0;
+  }
+  .first-trener__img {
+    width: 100%;
+    height: 90%;
+  }
+  .pilates-trener__grid {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 26px;
+  }
+  .pilates-trener__grid-item:nth-child(1) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+    text-align: center;
+  }
+  .pilates-trener__grid-item:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .pilates-trener__grid-item:nth-child(3) {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7/13;
+    grid-row: span 2;
+  }
+  .pilates-trener__grid-item:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+  }
+  .my-practice {
+    background-color: #FFFFFF;
+  }
+  .my-practice__inner {
+    padding: 72px 0 100px 0;
+  }
+  .my-practice__grid {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 72px;
+  }
+  .my-practice__grid-item:nth-child(1) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+  .my-practice__grid-item:nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+  .my-practice__grid-item:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .my-practice__grid-item:nth-child(4) {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 7;
+    grid-column: 6/13;
+  }
+  .my-practice__grid-item:nth-child(5) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 8;
+    grid-column: 3/11;
+  }
+  #history-diplom2 {
+    display: none;
+  }
+  #history-diplom1 {
+    display: block;
+  }
+  .education__button-dip {
+    display: none;
+  }
+}
+
 @media (min-width: 1244px) and (max-width: 1420px) {
   .about-heading__inner {
     padding: 64px 0 105px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-heading__container {
+    padding: 0 19px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1243px) {
+  .about-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 120%;
+  }
+  .about-subtitle {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+  }
+  .about-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .about-quote {
+    border-left: 3px solid #444B59;
+    padding-left: 13px;
+  }
+  .about-heading {
+    background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
+  }
+  .about-heading__inner {
+    padding: 129px 0 128px 0;
+  }
+  .about-heading__title {
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  .about-heading__text {
+    max-width: 513px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 50px;
+  }
+  .about-heading__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-heading__block-content {
+    margin-left: 31px;
+  }
+  .about-heading__block-title {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 130%;
+  }
+  .about-heading__block-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .about-todes__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: -64px;
+  }
+  .about-todes__content {
+    padding-right: 0px;
+  }
+  .about-todes__title-adaptiv {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    margin-bottom: 24px;
+  }
+  .about-todes__title {
+    display: none;
+  }
+  .about-todes__text {
+    padding-bottom: 16px;
+  }
+  .about-todes__text:last-child {
+    padding-bottom: 40px;
+  }
+  .about-todes__image {
+    max-width: 544px;
+    margin-bottom: 24px;
+  }
+  .about-todes__image-item {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .first-trener {
+    background-color: #FFFFFF;
+  }
+  .first-trener__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 11px;
+    grid-row-gap: 24px;
+  }
+  .first-trener__grid-item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .first-trener__grid-item:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .first-trener__grid-item:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .first-trener__title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .first-trener__text {
+    margin-bottom: 18px;
+  }
+  .first-trener__text:last-child {
+    margin-bottom: 0;
+  }
+  .first-trener__img {
+    width: 100%;
+    height: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .pilates-trener__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 11px;
+    grid-row-gap: 24px;
+  }
+  .pilates-trener__grid-item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    text-align: left;
+  }
+  .pilates-trener__grid-item:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .pilates-trener__grid-item:nth-child(3) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .pilates-trener__grid-item:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .pilates-trener__title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    text-align: center;
+  }
+  .pilates-trener__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 0px;
+  }
+  .my-practice__inner {
+    padding: 64px 0 40px 0;
+  }
+  .my-practice__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
+  .my-practice__quote-one {
+    margin: 24px 0 24px 0;
+  }
+  .my-practice__quote-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .my-practice__quote-two ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-left: 13px;
+  }
+  .my-practice__content {
+    padding-left: 0px;
+  }
+  .my-practice__text {
+    margin: 8px 0;
+  }
+  .education__title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .education__item {
+    margin-top: 40px;
+  }
+  .education__item .slick-slide {
+    padding-left: 20px;
+  }
+  .education__item-subtitle {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    text-align: center;
+  }
+  .education__button {
+    margin-top: 24px;
+  }
+  .education__button-dip {
+    display: block;
+  }
+  #history-diplom1 {
+    display: none;
+  }
+  #history-diplom2 {
+    display: block;
   }
 }
 
@@ -2672,12 +2974,7 @@ input[type~="text"], input[type~="tel"], textarea {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 17px;
-}
-
-.blogs__content-info:nth-child(1) img {
-  width: 100%;
-  height: 100%;
+  grid-column-gap: 14px;
 }
 
 .blogs__content-info:nth-child(2) {
@@ -2691,9 +2988,8 @@ input[type~="text"], input[type~="tel"], textarea {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .blogs__content-text {
@@ -2701,7 +2997,7 @@ input[type~="text"], input[type~="tel"], textarea {
   font-size: 21px;
   line-height: 130%;
   max-width: 248px;
-  margin-bottom: 48px;
+  padding-top: 20px;
 }
 
 .blogs__content-button {
@@ -2736,7 +3032,7 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .workout-blog__item {
   border-radius: 10px;
-  max-width: 370px;
+  width: 370px;
 }
 
 .workout-blog__item a {
@@ -2781,6 +3077,145 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .blogs__content-item.nextadd ~ .blogs__content-item {
   display: block;
+}
+
+@media (min-width: 902px) {
+  .blogs__content-info:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1244px) {
+  .blogs__container {
+    padding: 0 19px !important;
+  }
+  .workout-blog__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0;
+  }
+  .workout-blog__item {
+    width: 100%;
+  }
+  .workout-blog__video iframe {
+    height: 223px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1243px) {
+  .blog-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 120%;
+  }
+  .blogs__container {
+    background: none;
+    padding: 0 19px !important;
+  }
+  .blogs__inner {
+    padding: 64px 0 64px 0;
+  }
+  .blogs__title {
+    margin-bottom: 32px;
+  }
+  .blogs__info-context {
+    padding-left: 15px;
+  }
+  .blogs__info-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .blogs__info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .blogs__subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    margin: 40px 0 32px 0;
+  }
+  .workout-blog__title {
+    margin-bottom: 32px;
+  }
+  .workout-blog__text {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    margin-bottom: 32px;
+  }
+  .workout-blog__item-description {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .workout-blog__item {
+    margin-bottom: 36px;
+  }
+  .workout-blog__item a {
+    margin-top: -8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .workout-blog__button-open {
+    padding: 21px 120px;
+  }
+  .workout-blog__button-close {
+    padding: 21px 152px;
+  }
+}
+
+@media (min-width: 902px) and (max-width: 1243px) {
+  .blogs__content {
+    grid-row-gap: 35px;
+    margin-bottom: 40px;
+  }
+  .blogs__content-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 901px) {
+  .blogs__content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: 291px;
+    grid-column-gap: 0px;
+    grid-row-gap: 80px;
+    margin-bottom: 40px;
+  }
+  .blogs__content-item {
+    grid-auto-rows: 291px;
+    grid-column-gap: 14px;
+  }
+  .blogs__content-info:nth-child(1) img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 auto;
+  }
+  .blogs__content-text {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 130%;
+  }
 }
 
 .blog-item {
@@ -2943,6 +3378,10 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (max-width: 1243px) {
+  .avatar-img {
+    max-width: 81px;
+    max-height: 81px;
+  }
   .header__container {
     padding: 0 26px 0 19px;
   }
@@ -2988,7 +3427,9 @@ input[type~="text"], input[type~="tel"], textarea {
     z-index: 50;
   }
   .fixed {
-    position: fixed;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
   }
   .reviews__inner {
     background-image: none;
@@ -3090,6 +3531,7 @@ input[type~="text"], input[type~="tel"], textarea {
 @media (max-height: 800px) {
   .burger__menu.open-menu {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

@@ -1,10 +1,4 @@
-@media (max-width: 1024px) {
-    .button{
-        &__primary {
-            @include sub1mob
-        }
-    }
-}
+
 .button {
     cursor: pointer;
     &__primary {
@@ -85,3 +79,37 @@
     
 }
 
+@media (pointer:coarse){
+    .button{
+        &__primary{
+            @include sub1mob;
+            // &:active {
+            //     background-color: $green-hover;
+            // }
+        }
+        
+    }
+    
+    } 
+    // &__secondary {
+    //     @include subtitle2mob;
+    //     &:hover {
+    //         // background-color: $gray-fit;
+    //         box-shadow:none;
+    //     }
+    //     &:active {
+    //         background-color:$lightgray;
+    //         color: $gray-fit;
+    //     }
+    // }
+    // &__small {
+    //     background-color: $gray-fit;
+    //     border-radius: 7px;
+    //     color: $white-body;
+    //     @include smallmob;
+    //     &:active {repeat(2, 1fr)
+    //         background-color:$lightgray;
+    //         color: $gray-fit;
+    //     }
+
+    // }

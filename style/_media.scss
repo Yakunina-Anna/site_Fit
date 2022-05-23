@@ -29,6 +29,10 @@
 }
 
 @media  (max-width:1243px){
+    .avatar-img{
+        max-width: 81px;
+        max-height: 81px;
+       }
     .header__container{
         padding:0 26px 0 19px;
     }
@@ -75,7 +79,10 @@
         
     }
     .fixed{
-        position:fixed;
+        // position:fixed;
+        height: 100vh;
+        min-height: 100vh;
+        overflow: hidden;
     }
     
     .reviews{
@@ -170,5 +177,7 @@
 @media (max-height:800px){
     .burger__menu.open-menu{
         overflow-y: scroll;
+        -webkit-overflow-scrolling:touch;
     }
 }
+

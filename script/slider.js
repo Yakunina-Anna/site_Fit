@@ -44,7 +44,27 @@ $(document).ready(function(){
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
-        appendArrows:$('.education__button'),
+        appendArrows:$('.education__button-cerf')
+        // arrows:false,
+        // dots:false,
+        // adaptiveHeight:false, 
+        // // centerMode: true,
+        // slidesToShow:1, 
+        // slidesToScroll:1, 
+        // speed:700,   
+        // // rows:2      
+        // // infinite: false,
+        
+        
+    });
+    $('#history-diplom2').slick({
+        initialSlide:0,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        appendArrows:$('.education__button-dip')
         // arrows:false,
         // dots:false,
         // adaptiveHeight:false, 
