@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.burger').click(function() {
+        
         $('.burger__menu').addClass('open-menu');
         $("body").addClass("fixed");
     });

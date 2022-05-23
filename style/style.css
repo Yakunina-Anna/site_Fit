@@ -3198,7 +3198,7 @@ input[type~="text"], input[type~="tel"], textarea {
         grid-template-columns: 1fr;
     grid-auto-rows: 291px;
     grid-column-gap: 0px;
-    grid-row-gap: 80px;
+    grid-row-gap: 32px;
     margin-bottom: 40px;
   }
   .blogs__content-item {
@@ -3353,6 +3353,99 @@ input[type~="text"], input[type~="tel"], textarea {
   list-style-image: url(../../../image/blog-item/Vector.svg);
   padding-left: 34px;
   margin-bottom: 16px;
+}
+
+@media (max-width: 1244px) {
+  .blog-item__previous {
+    top: 64px;
+    left: 19px;
+  }
+  .blog-item__info {
+    width: 493px;
+  }
+  .blog-item__image {
+    max-width: 280px;
+    margin-bottom: 32px;
+  }
+  .blog-item__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    margin-bottom: 32px;
+  }
+  .blog-item__subtitle {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    background: url(../../../image/blog-item-obj.svg) center 0x no-repeat;
+    padding-top: 40px;
+    margin: 0 auto;
+    max-width: 376px;
+    background-size: contain;
+  }
+  .blog-item__avatar {
+    margin-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-item__avatar-content {
+    text-align: left;
+    padding-left: 16px;
+  }
+  .blog-item__avatar-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .blog-item__avatar-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .blog-wrapper__inner {
+    padding: 0 28px;
+    grid-row-gap: 24px;
+  }
+  .blog-wrapper__quotation {
+    border-left: 3px solid #4EAA40;
+    padding-left: 13px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .blog-wrapper__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .blog-wrapper__content img {
+    width: 100%;
+  }
+  .blog-wrapper__content-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 16px;
+  }
+  .blog-wrapper__content-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 10px;
+  }
+  .blog-wrapper__content-text:last-child {
+    margin-bottom: 0;
+  }
+  .blog-wrapper ul {
+    list-style-image: url(../../../image/blog-item/Vector.svg);
+    padding-left: 34px;
+    margin-bottom: 16px;
+  }
 }
 
 @media (min-width: 1244px) and (max-width: 1420px) {
