@@ -25,7 +25,7 @@
             padding-top: 40px;
             margin: 0 auto;
             max-width: 376px;
-            background-size: contain;
+            // background-size: contain;
         }
 
         &__avatar{
@@ -77,9 +77,19 @@
     
         & ul{
             list-style-image: url(../../../image/blog-item/Vector.svg);
-            padding-left: 34px;
+            padding-left: 27px;
             margin-bottom: 16px;
             
         }
     }
+}
+
+@media  (max-width:768px){
+    .blog-wrapper{
+        &__inner{
+            padding: 0 28px;
+            
+        }
+    }
+        
 }

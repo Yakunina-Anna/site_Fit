@@ -3382,7 +3382,6 @@ input[type~="text"], input[type~="tel"], textarea {
     padding-top: 40px;
     margin: 0 auto;
     max-width: 376px;
-    background-size: contain;
   }
   .blog-item__avatar {
     margin-top: 32px;
@@ -3443,8 +3442,14 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .blog-wrapper ul {
     list-style-image: url(../../../image/blog-item/Vector.svg);
-    padding-left: 34px;
+    padding-left: 27px;
     margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-wrapper__inner {
+    padding: 0 28px;
   }
 }
 
