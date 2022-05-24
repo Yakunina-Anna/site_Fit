@@ -118,7 +118,10 @@
     }
   }
 }
-@media  (min-width:768px) and (max-width:1243px){
+
+
+
+@media  (max-width:1243px){
   .about-title{
     @include h1mob;
   }
@@ -126,9 +129,7 @@
   .about-subtitle{
       @include sub1mob;
   }
-  .about-text{
-      @include mainmob;    
-  }
+  
   .about-quote{
               
       border-left: 3px solid $gray-fit;
@@ -137,20 +138,13 @@
       
   }
   .about-heading{
-    background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
-    &__inner {
-      padding: 129px 0 128px 0;
-    }
+   
     
     &__title{
       margin-bottom: 50px;
-     
-      max-width: 500px;
     }
     &__text{
-        max-width: 513px;
-        @include mainmob;
-        margin-bottom: 50px;
+      margin-bottom: 50px;
     }
     &__block{
         display: flex;
@@ -172,7 +166,6 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        
         margin-bottom: -64px;
     }
     &__content{
@@ -182,6 +175,7 @@
     &__title-adaptiv{
       @include h2mob;
       margin-bottom: 24px;
+      text-align: center;
     }
     &__title{
       display: none;
@@ -195,7 +189,7 @@
 
     &__image{
         max-width: 544px;
-        margin-bottom: 24px;
+        
     }
     &__image-item{
       text-align: center;
@@ -207,6 +201,143 @@
 
   .first-trener{
     background-color: $white-body;
+    
+    &__title{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__text:last-child{
+        margin-bottom: 0;
+    }
+    &__img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+
+  }
+  .pilates-trener{
+    
+   &__title{
+    margin-bottom: 24px;
+    @include sub1mob;
+    text-align: center;
+  }
+  &__text{
+    
+    margin-bottom: 0px;
+}
+
+    
+    
+  }
+
+  .my-practice{
+    &__inner{
+        padding:64px 0 40px 0;
+    }
+
+    &__grid{
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+    }
+    &__quote-one {
+      margin: 24px 0 24px 0;
+    }
+    &__quote-subtitle{
+      @include subtitle2mob;
+    }
+    &__quote-two{
+      ul{
+          
+          @include mainmob;margin-left: 13px;
+      }
+    }
+    &__content{
+      padding-left: 0px;
+    }
+    &__text{
+      margin: 8px 0;
+    }
+   
+  }
+
+  .education{
+    
+    &__title{
+        text-align: center;
+        @include h2mob
+    }
+    &__item{
+        margin-top: 40px;
+       
+    }
+    &__item .slick-slide{
+      padding-left: 20px;
+    }
+    &__item-subtitle{
+        margin-bottom: 24px;
+        @include sub1mob;
+        text-align: center;
+    }
+    
+    &__button{
+        margin-top: 24px;
+    }
+    &__button-dip{
+      display: block;
+    }
+
+    
+}
+.education__item .slick-slide {
+  height: 34vh;
+  img{
+    height:inherit;
+  }
+}
+#history-diplom1{
+  display: none;
+}
+#history-diplom2{
+  display: block;
+}
+}
+
+@media  (min-width:768px) and (max-width:1243px){
+  
+  .about-text{
+      @include mainmob;    
+  }
+  
+  .about-heading{
+    background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
+  
+    &__inner {
+      padding: 129px 0 128px 0;
+    }
+    
+    &__title{
+     max-width: 500px;
+    }
+    &__text{
+        max-width: 513px;
+        @include mainmob;
+        
+    }
+    
+  }
+
+  .about-todes{
+    
+    &__image{
+        margin-bottom: 24px;
+    }
+    
+  }
+
+  .first-trener{
     &__grid{ 
         grid-template-columns: repeat(2,1fr);
         grid-column-gap: 11px;
@@ -227,21 +358,11 @@
         grid-column: 1/3;
         grid-row: 1;
     }
-    &__title{
-        text-align: center;
-        margin-bottom: 24px;
-    }
+    
     &__text{
         margin-bottom: 18px;
     }
-    &__text:last-child{
-        margin-bottom: 0;
-    }
-    &__img{
-        width: 100%;
-        height: 90%;
-        object-fit: cover;
-    }
+    
 
 
   }
@@ -269,15 +390,164 @@
         grid-column: 1/2;
         grid-row: 2;
    }
-   &__title{
-    margin-bottom: 24px;
-    @include sub1mob;
-    text-align: center;
-  }
+   
   &__text{
     @include mainmob;
-    margin-bottom: 0px;
+  }
+
+    
+    
+  }
+
+  .my-practice{
+    &__inner{
+        padding:64px 0 40px 0;
+    }
+
+    &__grid{
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+    }
+    &__quote-one {
+      margin: 24px 0 24px 0;
+    }
+    &__quote-subtitle{
+      @include subtitle2mob;
+    }
+    &__quote-two{
+      ul{
+          
+          @include mainmob;margin-left: 13px;
+      }
+    }
+    &__content{
+      padding-left: 0px;
+    }
+    &__text{
+      margin: 8px 0;
+    }
+   
+  }
+
+  .education{
+    
+    &__title{
+        text-align: center;
+        @include h2mob
+    }
+    &__item{
+        margin-top: 40px;
+       
+    }
+    &__item .slick-slide{
+      padding-left: 20px;
+    }
+    &__item-subtitle{
+        margin-bottom: 24px;
+        @include sub1mob;
+        text-align: center;
+    }
+    
+    &__button{
+        margin-top: 24px;
+    }
+    &__button-dip{
+      display: block;
+    }
+
+    
 }
+#history-diplom1{
+  display: none;
+}
+#history-diplom2{
+  display: block;
+}
+}
+@media  (max-width:768px){
+  
+  .about-text{
+      @include smallmob;    
+  }
+  .about-quote{
+              
+      border-left: 3px solid $gray-fit;
+      padding-left: 13px;
+      
+      
+  }
+  .about-heading{
+    background: no-repeat top/100% url(../../../image/history-adaptiv-mini.jpg);
+    background-size: cover;
+    &__inner {
+      padding: 56px 0 38px 0;
+    }
+    
+    &__title{
+      max-width: 250px;
+    }
+    &__text{
+        max-width: 250px;
+        @include smallmob;
+    }
+    
+  }
+  .about-todes{
+   &__image{
+        margin-bottom: 40px;
+    }
+  }
+
+  .first-trener{
+    
+    &__grid{ 
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+    }
+    &__grid-item:nth-child(1) {
+        grid-row: 2;
+    }
+     &__grid-item:nth-child(2) {
+         grid-row: 3;
+     }
+    &__grid-item:nth-child(3){
+        grid-row: 1;
+    }
+    
+    &__text{
+        margin-bottom: 16px;
+    }
+    
+
+
+  }
+  .pilates-trener{
+    &__grid{
+        margin-top: -16px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 24px;
+    }
+    &__grid-item{
+      width: 100%;
+    }
+    &__grid-item:nth-child(1){
+      
+        text-align: left;
+    }
+    &__grid-item:nth-child(2) {
+        grid-row: 3;
+    }
+    &__grid-item:nth-child(3) {
+        grid-row: 4;
+    }
+
+    &__grid-item:nth-child(4) {
+       
+        grid-row: 2;
+    }
+    &__text{
+      @include smallmob;
+    }
 
     
     

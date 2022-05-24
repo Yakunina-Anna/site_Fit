@@ -359,8 +359,33 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form-down {
+    width: 82%;
+  }
+  .btn-form {
+    text-align: center;
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-down {
+    width: 100%;
+  }
+  .btn-form {
+    text-align: center;
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 0;
+  }
+}
+
 .burger {
   display: none;
+  cursor: pointer;
 }
 
 .burger__menu {
@@ -669,6 +694,7 @@ input[type~="text"], input[type~="tel"], textarea {
   font-size: 28px;
   line-height: 120%;
   margin-bottom: 54px;
+  text-align: center;
 }
 
 .about__content {
@@ -772,7 +798,7 @@ input[type~="text"], input[type~="tel"], textarea {
           box-sizing: border-box;
 }
 
-@media (min-width: 768px) and (max-width: 1243px) {
+@media (max-width: 1243px) {
   .about__title {
     max-width: 361px;
     margin-bottom: 48px;
@@ -790,6 +816,8 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .about__content-item img {
     margin-bottom: 24px;
+    width: 105px;
+    height: 105px;
   }
   .about__content-text {
     height: 63px;
@@ -954,25 +982,8 @@ input[type~="text"], input[type~="tel"], textarea {
     grid-row-gap: 24px;
   }
   .principles__grid-item {
-    -webkit-filter: drop-shadow(0px 4px 25px rgba(78, 170, 64, 0.25));
-            filter: drop-shadow(0px 4px 25px rgba(78, 170, 64, 0.25));
-    border-radius: 10px;
-    background-color: #FFFFFF;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .principles__grid {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-row-gap: 24px;
-  }
-  .principles__grid-item {
-    -webkit-filter: drop-shadow(0px 4px 25px rgba(78, 170, 64, 0.25));
-            filter: drop-shadow(0px 4px 25px rgba(78, 170, 64, 0.25));
+    -webkit-filter: drop-shadow(0px 5px 20px -1px rgba(22, 164, 1, 0.25));
+            filter: drop-shadow(0px 5px 20px -1px rgba(22, 164, 1, 0.25));
     border-radius: 10px;
     background-color: #FFFFFF;
     padding: 10px 10px 18px 10px;
@@ -986,6 +997,14 @@ input[type~="text"], input[type~="tel"], textarea {
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
+  }
+}
+
+@media (max-width: 768px) {
+  .principles__grid-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
   }
 }
 
@@ -1189,15 +1208,18 @@ input[type~="text"], input[type~="tel"], textarea {
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     text-align: left;
     padding: 0;
+  }
+  .accordeon__inner {
+    margin-top: 16px;
   }
   .accordeon__heading {
     font-weight: 500;
     font-size: 18px;
     line-height: 130%;
-    padding: 16px 0;
+    padding: 8px 0;
     padding-right: 97px;
   }
   .accordeon__heading::after {
@@ -1371,6 +1393,9 @@ input[type~="text"], input[type~="tel"], textarea {
             align-items: center;
     margin-bottom: 0;
   }
+  .workout__title {
+    margin-bottom: 36px;
+  }
   .workout__text {
     font-weight: 500;
     font-size: 21px;
@@ -1389,6 +1414,15 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .workout__video iframe {
     height: 223px;
+  }
+}
+
+@media (max-width: 768px) {
+  .workout__button {
+    width: 100%;
+  }
+  .workout__button-close {
+    width: 100%;
   }
 }
 
@@ -1649,6 +1683,12 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (max-width: 1243px) {
+  .reviews__wrapper {
+    padding: 25px 19px 15px 19px;
+    -webkit-box-shadow: 0px 5px 20px -1px rgba(22, 164, 1, 0.25);
+            box-shadow: 0px 5px 20px -1px rgba(22, 164, 1, 0.25);
+    border-radius: 10px;
+  }
   .reviews__item-heading {
     padding-bottom: 29px;
   }
@@ -1669,6 +1709,15 @@ input[type~="text"], input[type~="tel"], textarea {
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
+  }
+  .reviews__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .reviews__button {
+    margin-top: 28px;
+    margin-bottom: 48px;
   }
   .reviews__down-subtitle {
     font-weight: 500;
@@ -2631,7 +2680,7 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1243px) {
+@media (max-width: 1243px) {
   .about-title {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
@@ -2643,30 +2692,14 @@ input[type~="text"], input[type~="tel"], textarea {
     font-size: 21px;
     line-height: 110%;
   }
-  .about-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-  }
   .about-quote {
     border-left: 3px solid #444B59;
     padding-left: 13px;
   }
-  .about-heading {
-    background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
-  }
-  .about-heading__inner {
-    padding: 129px 0 128px 0;
-  }
   .about-heading__title {
     margin-bottom: 50px;
-    max-width: 500px;
   }
   .about-heading__text {
-    max-width: 513px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
     margin-bottom: 50px;
   }
   .about-heading__block {
@@ -2712,6 +2745,7 @@ input[type~="text"], input[type~="tel"], textarea {
     font-size: 32px;
     line-height: 100%;
     margin-bottom: 24px;
+    text-align: center;
   }
   .about-todes__title {
     display: none;
@@ -2724,7 +2758,6 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .about-todes__image {
     max-width: 544px;
-    margin-bottom: 24px;
   }
   .about-todes__image-item {
     text-align: center;
@@ -2734,6 +2767,121 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .first-trener {
     background-color: #FFFFFF;
+  }
+  .first-trener__title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .first-trener__text:last-child {
+    margin-bottom: 0;
+  }
+  .first-trener__img {
+    width: 100%;
+    height: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .pilates-trener__title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    text-align: center;
+  }
+  .pilates-trener__text {
+    margin-bottom: 0px;
+  }
+  .my-practice__inner {
+    padding: 64px 0 40px 0;
+  }
+  .my-practice__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
+  .my-practice__quote-one {
+    margin: 24px 0 24px 0;
+  }
+  .my-practice__quote-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .my-practice__quote-two ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-left: 13px;
+  }
+  .my-practice__content {
+    padding-left: 0px;
+  }
+  .my-practice__text {
+    margin: 8px 0;
+  }
+  .education__title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .education__item {
+    margin-top: 40px;
+  }
+  .education__item .slick-slide {
+    padding-left: 20px;
+  }
+  .education__item-subtitle {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    text-align: center;
+  }
+  .education__button {
+    margin-top: 24px;
+  }
+  .education__button-dip {
+    display: block;
+  }
+  .education__item .slick-slide {
+    height: 34vh;
+  }
+  .education__item .slick-slide img {
+    height: inherit;
+  }
+  #history-diplom1 {
+    display: none;
+  }
+  #history-diplom2 {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1243px) {
+  .about-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .about-heading {
+    background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
+  }
+  .about-heading__inner {
+    padding: 129px 0 128px 0;
+  }
+  .about-heading__title {
+    max-width: 500px;
+  }
+  .about-heading__text {
+    max-width: 513px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .about-todes__image {
+    margin-bottom: 24px;
   }
   .first-trener__grid {
     -ms-grid-columns: (1fr)[2];
@@ -2762,21 +2910,8 @@ input[type~="text"], input[type~="tel"], textarea {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  .first-trener__title {
-    text-align: center;
-    margin-bottom: 24px;
-  }
   .first-trener__text {
     margin-bottom: 18px;
-  }
-  .first-trener__text:last-child {
-    margin-bottom: 0;
-  }
-  .first-trener__img {
-    width: 100%;
-    height: 90%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .pilates-trener__grid {
     -ms-grid-columns: (1fr)[2];
@@ -2809,18 +2944,150 @@ input[type~="text"], input[type~="tel"], textarea {
     -ms-grid-row: 2;
     grid-row: 2;
   }
-  .pilates-trener__title {
+  .pilates-trener__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .my-practice__inner {
+    padding: 64px 0 40px 0;
+  }
+  .my-practice__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
+  .my-practice__quote-one {
+    margin: 24px 0 24px 0;
+  }
+  .my-practice__quote-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .my-practice__quote-two ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-left: 13px;
+  }
+  .my-practice__content {
+    padding-left: 0px;
+  }
+  .my-practice__text {
+    margin: 8px 0;
+  }
+  .education__title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .education__item {
+    margin-top: 40px;
+  }
+  .education__item .slick-slide {
+    padding-left: 20px;
+  }
+  .education__item-subtitle {
     margin-bottom: 24px;
     font-weight: 500;
     font-size: 21px;
     line-height: 110%;
     text-align: center;
   }
+  .education__button {
+    margin-top: 24px;
+  }
+  .education__button-dip {
+    display: block;
+  }
+  #history-diplom1 {
+    display: none;
+  }
+  #history-diplom2 {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .about-quote {
+    border-left: 3px solid #444B59;
+    padding-left: 13px;
+  }
+  .about-heading {
+    background: no-repeat top/100% url(../../../image/history-adaptiv-mini.jpg);
+    background-size: cover;
+  }
+  .about-heading__inner {
+    padding: 56px 0 38px 0;
+  }
+  .about-heading__title {
+    max-width: 250px;
+  }
+  .about-heading__text {
+    max-width: 250px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .about-todes__image {
+    margin-bottom: 40px;
+  }
+  .first-trener__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
+  .first-trener__grid-item:nth-child(1) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .first-trener__grid-item:nth-child(2) {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .first-trener__grid-item:nth-child(3) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .first-trener__text {
+    margin-bottom: 16px;
+  }
+  .pilates-trener__grid {
+    margin-top: -16px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-row-gap: 24px;
+  }
+  .pilates-trener__grid-item {
+    width: 100%;
+  }
+  .pilates-trener__grid-item:nth-child(1) {
+    text-align: left;
+  }
+  .pilates-trener__grid-item:nth-child(2) {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .pilates-trener__grid-item:nth-child(3) {
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .pilates-trener__grid-item:nth-child(4) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
   .pilates-trener__text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    margin-bottom: 0px;
+    font-size: 14px;
+    line-height: 120%;
   }
   .my-practice__inner {
     padding: 64px 0 40px 0;
@@ -2889,6 +3156,7 @@ input[type~="text"], input[type~="tel"], textarea {
   font-size: 39px;
   line-height: 120%;
   font-family: 'Playfair Display', serif;
+  text-align: center;
 }
 
 .blogs {
@@ -2943,10 +3211,12 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 .blogs__subtitle {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  margin: 48px 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 100%;
+  margin: 40px 0 32px 0;
+  text-align: center;
 }
 
 .blogs__blog {
@@ -2972,8 +3242,8 @@ input[type~="text"], input[type~="tel"], textarea {
           filter: drop-shadow(0px 4px 34px rgba(181, 181, 181, 0.21));
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   grid-column-gap: 14px;
 }
 
@@ -3002,6 +3272,15 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .blogs__content-button {
   padding: 19px 41px;
+  text-align: center;
+}
+
+.blogs__content-btn {
+  padding: 21px 128px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 130%;
 }
 
 .workout-blog__inner {
@@ -3015,6 +3294,15 @@ input[type~="text"], input[type~="tel"], textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.workout-blog__subtitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .workout-blog__content {
@@ -3087,8 +3375,41 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (max-width: 1244px) {
-  .blogs__container {
-    padding: 0 19px !important;
+  .blog-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 120%;
+  }
+  .blogs__info-context {
+    padding-left: 15px;
+  }
+  .blogs__info-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .blogs__info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .blogs__subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    margin: 40px 0 32px 0;
+  }
+  .blogs__content-button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .blogs__content-btn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
   }
   .workout-blog__content {
     display: -webkit-box;
@@ -3112,12 +3433,6 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (min-width: 768px) and (max-width: 1243px) {
-  .blog-title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 120%;
-  }
   .blogs__container {
     background: none;
     padding: 0 19px !important;
@@ -3128,28 +3443,9 @@ input[type~="text"], input[type~="tel"], textarea {
   .blogs__title {
     margin-bottom: 32px;
   }
-  .blogs__info-context {
-    padding-left: 15px;
-  }
-  .blogs__info-subtitle {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-  }
-  .blogs__info-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-  }
-  .blogs__subtitle {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 100%;
-    margin: 40px 0 32px 0;
-  }
-  .workout-blog__title {
-    margin-bottom: 32px;
+  .blogs__content-btn {
+    padding: 21px 0;
+    width: 100%;
   }
   .workout-blog__text {
     font-weight: 500;
@@ -3164,7 +3460,7 @@ input[type~="text"], input[type~="tel"], textarea {
     line-height: 130%;
   }
   .workout-blog__item {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
   .workout-blog__item a {
     margin-top: -8px;
@@ -3180,10 +3476,75 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
-@media (min-width: 902px) and (max-width: 1243px) {
+@media (max-width: 901px) {
   .blogs__content {
-    grid-row-gap: 35px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: 291px;
+    grid-row-gap: 32px;
     margin-bottom: 40px;
+  }
+  .blogs__content-info img {
+    height: 100%;
+    position: fixed;
+    left: 0%;
+  }
+  .blogs__content-item {
+    grid-column-gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blogs__container {
+    background: none;
+  }
+  .blogs__inner {
+    padding: 56px 0 56px 0;
+  }
+  .blogs__title {
+    margin-bottom: 24px;
+  }
+  .blogs__content-btn {
+    padding: 21px 0;
+    width: 100%;
+  }
+  .blogs__content-text {
+    padding-top: 0px;
+  }
+  .workout-blog__text {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    margin-bottom: 24px;
+  }
+  .workout-blog__item-description {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .workout-blog__item {
+    margin-bottom: 24px;
+  }
+  .workout-blog__item a {
+    margin-top: -8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .workout-blog__button-open {
+    padding: 21px 0px;
+    width: 100%;
+  }
+  .workout-blog__button-close {
+    padding: 21px 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 606px) {
+  .blogs__content {
+    grid-auto-rows: 192px;
   }
   .blogs__content-text {
     font-weight: 500;
@@ -3192,29 +3553,20 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
-@media (min-width: 768px) and (max-width: 901px) {
+@media (max-width: 413px) {
   .blogs__content {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-auto-rows: 291px;
-    grid-column-gap: 0px;
-    grid-row-gap: 32px;
-    margin-bottom: 40px;
+    grid-auto-rows: 146px;
   }
   .blogs__content-item {
-    grid-auto-rows: 291px;
-    grid-column-gap: 14px;
-  }
-  .blogs__content-info:nth-child(1) img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    margin: 0 auto;
+    grid-column-gap: 0px;
   }
   .blogs__content-text {
     font-weight: 400;
-    font-size: 21px;
-    line-height: 130%;
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .blogs__content-button {
+    padding: 10px 20px;
   }
 }
 
@@ -3480,11 +3832,47 @@ input[type~="text"], input[type~="tel"], textarea {
     max-width: 81px;
     max-height: 81px;
   }
-  .header__container {
-    padding: 0 26px 0 19px;
-  }
   .header__menu-inner {
     margin: 9px 0;
+  }
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .heading__inner {
+    padding-top: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .heading__subtitle-top {
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .heading__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 120%;
+  }
+  .heading__subtitle-bottom {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    max-width: 250px;
+    color: #4EAA40;
   }
   .burger {
     display: block;
@@ -3535,30 +3923,14 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (min-width: 768px) and (max-width: 1243px) {
+  .header__container {
+    padding: 0 26px 0 19px;
+  }
   .container {
     padding: 0 112px;
   }
   .inner {
     padding: 64px 0;
-  }
-  .title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 100%;
-  }
-  .heading__inner {
-    padding-top: 56px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .heading__background-circle {
     width: 229px;
@@ -3572,26 +3944,10 @@ input[type~="text"], input[type~="tel"], textarea {
     left: 225px;
     top: 56px;
   }
-  .heading__subtitle-top {
-    margin-bottom: 7px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 120%;
-  }
   .heading__title {
     margin-bottom: 32px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 120%;
   }
   .heading__subtitle-bottom {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 100%;
-    max-width: 250px;
-    color: #4EAA40;
     margin-bottom: 121px;
   }
   .heading__text {
@@ -3599,9 +3955,6 @@ input[type~="text"], input[type~="tel"], textarea {
     font-weight: 500;
     font-size: 21px;
     line-height: 110%;
-  }
-  .heading__btn {
-    margin-top: 48px;
   }
   .heading__button {
     font-weight: 500;
@@ -3630,6 +3983,57 @@ input[type~="text"], input[type~="tel"], textarea {
   .burger__menu.open-menu {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__container {
+    padding: 0 19px 0 19px;
+  }
+  .container {
+    padding: 0 19px;
+  }
+  .inner {
+    padding: 56px 0;
+  }
+  .heading__title {
+    margin-bottom: 84px;
+  }
+  .heading__subtitle-bottom {
+    margin-bottom: 81px;
+  }
+  .heading__text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 48px;
+  }
+  .heading__background-circle {
+    width: 138px;
+    height: 178px;
+    left: 187px;
+    top: 112px;
+  }
+  .heading__background-photo {
+    width: 275px;
+    height: 439px;
+    left: 70px;
+    top: 41px;
+  }
+  .heading__background-photo img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .heading__btn {
+    width: 100%;
+  }
+  .heading__button {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 110%;
+    width: 100%;
+    text-align: center;
+    padding: 26px 0;
+    margin-bottom: 64px;
   }
 }
 
@@ -3715,7 +4119,7 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
-  min-width: 375px;
+  min-width: 320px;
   overflow-anchor: none;
   color: #444B59;
   font-weight: 400;

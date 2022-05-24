@@ -10,6 +10,7 @@
     &__subtitle{
         @include subtitle1;
         margin-bottom: 54px;
+        text-align: center;
     }
 
     &__content{
@@ -97,7 +98,7 @@
     //     max-width: 1440px;
     //    }
    
-@media  (min-width:768px) and (max-width:1243px){
+@media  (max-width:1243px){
     .about__title{
         max-width: 361px;
         margin-bottom: 48px;
@@ -115,6 +116,8 @@
     // }
     .about__content-item img {
         margin-bottom: 24px;
+        width: 105px;
+        height: 105px;
       }
     
     .about__content-text{
@@ -131,5 +134,9 @@
         justify-content: center;
         align-items: center;
     }
+    
+}
+
+@media  (max-width:768px) {
     
 }

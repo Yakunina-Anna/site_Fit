@@ -65,30 +65,51 @@
     }
 }
 @media (max-width:1243px) {
-    .workout__inner{
-        margin-top: 0;
-   }
+    .workout{
+        &__inner{
+            margin-top: 0;
+       }
+       &__content {
+        @include  center-column;
+        margin-bottom: 0;
+        }
+        &__title{
+            margin-bottom:36px;
+        }
+        &__text{
+            @include sub1mob;
+            margin-bottom:36px;
+        }
+        &__item {
+            width:100%;
+           margin-bottom: 36px;
+      
+        }
+        &__item-description {
+            margin-top: 16px;
+           @include mainmob;
+        }
+        &__video iframe{
+            height: 223px;
+         }
 
-   .workout__content {
-      @include  center-column;
-      margin-bottom: 0;
-   }
-   .workout__text{
-       @include sub1mob;
-       margin-bottom:36px;
-   }
-   .workout__item {
-      width:100%;
-     margin-bottom: 36px;
 
-   }
-   .workout__item-description {
-       margin-top: 16px;
-      @include mainmob;
-   }
 
-   .workout__video iframe{
-      height: 223px;
-   }    
+    }
+       
 }
+@media (max-width:768px) {
+    .workout{
+       &__button{
+           width: 100%;
+       }
+       &__button-close{
+        width: 100%;
+    }
+
+
+    }
+       
+}
+
 

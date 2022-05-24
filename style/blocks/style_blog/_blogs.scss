@@ -1,6 +1,7 @@
 
 .blog-title{
-    @include title-h2
+    @include title-h2;
+    text-align: center;
 }
 
 
@@ -16,6 +17,7 @@
     }
     &__title{
         margin-bottom: 59px;
+        
     }
     &__info{
         display: flex;
@@ -34,10 +36,9 @@
         @include main
     }
     &__subtitle{
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 40px;
-        margin: 48px 0;
+       @include h2mob;
+       margin: 40px 0 32px 0;
+        text-align: center;
     }
     &__blog{
         width: 100%;
@@ -56,7 +57,7 @@
         border-radius: 9px;
         filter: drop-shadow(0px 4px 34px rgba(181, 181, 181, 0.21));
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 14px;
     }
 
@@ -76,6 +77,12 @@
     }
     &__content-button{
         padding: 19px 41px;
+        text-align: center;
+    }
+    &__content-btn{
+        padding: 21px 128px;
+        text-align: center;
+        @include main
     }
 
 
@@ -88,6 +95,11 @@
          @include center-column
 
     }
+    &__subtitle{
+        @include h2mob;
+         text-align: center;
+         margin-bottom: 32px;
+     }
 
     &__content {
         width: 100%;

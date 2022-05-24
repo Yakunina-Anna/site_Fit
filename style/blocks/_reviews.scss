@@ -1,14 +1,6 @@
 
 .reviews{
-    
-    // &__inner{
-    //     // height: 1000px;
-    //     background-image: url(../../image/bg-reviews.svg) ;
-    //     background-repeat:no-repeat;
-    //     background-position: 50% 100px;
-        
-    // }
-    
+   
     &__title{
         margin-top: 50px;
         margin-bottom: 30px;;
@@ -109,6 +101,11 @@
 }
 @media  (max-width:1243px){
     .reviews{
+        &__wrapper{
+            padding: 25px 19px 15px 19px;
+            box-shadow: 0px 5px 20px -1px rgba(22, 164, 1, 0.25);
+            border-radius: 10px;
+        }
         &__item-heading{
             // max-width: 268px;
             padding-bottom:29px;
@@ -128,9 +125,17 @@
                 @include smallmob
             }
         }
+        &__item-text{
+            @include smallmob
+        }
+        &__button{
+            margin-top: 28px;
+            margin-bottom: 48px;
+        }
         &__down-subtitle {
             @include sub1mob;
         }
+
        
     }
     

@@ -44,7 +44,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
-        appendArrows:$('.education__button-cerf')
+        appendArrows:$('.education__button-cerf'),
         // arrows:false,
         // dots:false,
         // adaptiveHeight:false, 
@@ -54,7 +54,6 @@ $(document).ready(function(){
         // speed:700,   
         // // rows:2      
         // // infinite: false,
-        
         
     });
     $('#history-diplom2').slick({

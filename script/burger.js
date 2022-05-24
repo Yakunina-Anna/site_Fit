@@ -4,12 +4,16 @@ $(document).ready(function() {
         $('.burger__menu').addClass('open-menu');
         $("body").addClass("fixed");
     });
+    
     $('.burger__close').click(function() {
         $('.burger__menu').removeClass('open-menu');
         $("body").removeClass("fixed");
     });
+
+   
   
 });
+
 
 // "use strict"
 // const isMobile={

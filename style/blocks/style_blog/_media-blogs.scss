@@ -11,8 +11,34 @@
 
 
 @media  (max-width:1244px){
-    .blogs__container{
-        padding: 0 19px !important
+    // .blogs__container{
+    //     padding: 0 19px !important
+    // }
+    .blog-title{
+        @include h1mob
+    }
+    .blogs{
+        &__info-context{
+            padding-left: 15px;
+        }
+        &__info-subtitle{
+            @include mainmob
+        }
+        &__info-text{
+            @include smallmob
+        }
+
+        &__subtitle{
+            @include h2mob;
+            margin: 40px 0 32px 0;
+        }
+        &__content-button{
+            @include smallmob
+        }
+        &__content-btn{
+            @include subtitle2mob
+        }
+        
     }
     .workout-blog{
         &__content {
@@ -30,11 +56,9 @@
         
     }
 }
-@media  (min-width:768px) and (max-width:1243px){
+@media (min-width:768px) and  (max-width:1243px){
     
-    .blog-title{
-        @include h1mob
-    }
+    
     .blogs{
         &__container{
             background:none;
@@ -46,27 +70,18 @@
         &__title{
             margin-bottom: 32px;
         }
-        &__info-context{
-            padding-left: 15px;
+        
+        &__content-btn{
+                padding: 21px 0;
+                width: 100%;
         }
-        &__info-subtitle{
-            @include mainmob
-        }
-        &__info-text{
-            @include smallmob
-        }
-        &__subtitle{
-            @include h2mob;
-            margin: 40px 0 32px 0;
-        }
+        
        
 
     }
     .workout-blog{
         
-        &__title{
-            margin-bottom: 32px;
-        }
+        
         &__text{
             @include sub1mob;
             margin-bottom: 32px;
@@ -76,7 +91,7 @@
            @include mainmob;
         }
         &__item {
-            margin-bottom: 36px;
+            margin-bottom: 32px;
             & a{
                 margin-top: -8px;
                 @include smallmob
@@ -94,49 +109,118 @@
         
     }
 }
-@media  (min-width:902px) and (max-width:1243px){
-    
-    .blogs{
-      
-        &__content{
-            grid-row-gap: 35px;
-            margin-bottom: 40px;
-        }
-        &__content-text{
-            @include subtitle2mob;
-        }
-    }
-   
-}
-@media  (min-width:768px) and (max-width:901px){
-   
-    .blogs{
-        
 
+
+@media   (max-width:901px){
+    .blogs{
         &__content{
             grid-template-columns: 1fr;
             grid-auto-rows: 291px;
-            grid-column-gap: 0px;
             grid-row-gap: 32px;
             margin-bottom: 40px;
         }
-        &__content-item{
-            
-            grid-auto-rows: 291px;
-            grid-column-gap: 14px;
-        }
-        &__content-info:nth-child(1) {
-        
+
+        &__content-info {
             & img{
-                
-               height: 100%;
-                object-fit: cover;
-                margin: 0 auto;
+                height:100%;
+                position: fixed;
+                left: 0%;
             }
         }
+       
+        &__content-item{
+            grid-column-gap: 16px;
+        }
+        // &__content-btn{
+        //     padding: 21px 0;
+        //     width: 100%;
+        // }
+        
+       
+    }
+}
+   
+
+@media (max-width:767px){
+
+    .blogs{
+        &__container{
+            background:none;
+        }
+        &__inner{
+            padding: 56px 0 56px 0;
+        }
+        &__title{
+            margin-bottom: 24px;
+        }
+        
+        &__content-btn{
+            padding: 21px 0;
+            width: 100%;
+        }
+        
         &__content-text{
-            @include main;
+        padding-top: 0px;
         }
     }
-    
+    .workout-blog{
+        
+        
+        &__text{
+            @include sub1mob;
+            margin-bottom:24px;
+        }
+        &__item-description {
+            margin-top: 16px;
+           @include subtitle2mob;
+        }
+        &__item {
+            margin-bottom: 24px;
+            & a{
+                margin-top: -8px;
+                @include smallmob
+            }
+      
+        }
+        &__button-open{
+            padding: 21px 0px;
+            width: 100%;
+        }
+        &__button-close{
+            padding: 21px 0px;
+            width: 100%;
+        }
+          
+
+        
+    }
 }
+ @media  (min-width:414px) and (max-width:606px){
+     .blogs{
+        &__content{
+            grid-auto-rows: 192px;
+        }
+         &__content-text{
+             @include subtitle2mob
+         }
+         
+     }
+ }
+ @media  (max-width:413px) {
+    .blogs{
+       &__content{
+           grid-auto-rows: 146px;
+       }
+       &__content-item{
+        grid-column-gap: 0px;
+    }
+        &__content-text{
+            @include smallmob
+        }
+        &__content-button{
+            padding: 10px 20px;
+        }
+        
+    }
+}
+

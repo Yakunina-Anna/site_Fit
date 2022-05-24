@@ -185,13 +185,16 @@
 
     .questions__text {
         @include mainmob;
-        margin-bottom: 32px;
+        margin-bottom: 40px;
         text-align: left;
         padding: 0 ;
     }
+    .accordeon__inner{
+        margin-top: 16px;
+    }
     .accordeon__heading{
         @include subtitle2mob;
-        padding: 16px 0;
+        padding: 8px 0;
         padding-right: 97px;
         
         

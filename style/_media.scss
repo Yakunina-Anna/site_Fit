@@ -33,12 +33,30 @@
         max-width: 81px;
         max-height: 81px;
        }
-    .header__container{
-        padding:0 26px 0 19px;
-    }
+   
     .header__menu-inner{
         margin: 9px 0;
     }
+    .title{
+        @include h2mob;
+    }
+    .heading__inner{
+        padding-top:56px;
+        @include center-column
+    }
+    .heading__subtitle-top{
+        margin-bottom: 7px;
+        @include h3mob;
+    }
+    .heading__title{
+        @include h1mob;
+    }
+    .heading__subtitle-bottom{
+        @include h2mob;
+        max-width: 250px;
+        color: $green-fit;
+    }
+
     .burger{
         display: block;
         position: relative;
@@ -99,19 +117,17 @@
 }
 
 @media  (min-width:768px) and (max-width:1243px){
+    .header__container{
+        padding:0 26px 0 19px;
+    }
     .container{
         padding: 0 112px;
     }
     .inner{
         padding: 64px 0;
     }
-    .title{
-        @include h2mob;
-    }
-    .heading__inner{
-        padding-top:56px;
-        @include center-column
-    }
+    
+    
     .heading__background-circle{
         width: 229px;
         height: 229px; 
@@ -125,19 +141,12 @@
         top:56px;
     }
 
-    .heading__subtitle-top{
-        margin-bottom: 7px;
-        @include h3mob;
-    }
+    
     .heading__title{
         margin-bottom: 32px;
-        @include h1mob;
     }
     .heading__subtitle-bottom{
-        @include h2mob;
-        max-width: 250px;
-        color: $green-fit;
-        margin-bottom: 121px;
+       margin-bottom: 121px;
     }
     .heading__text{
         text-align: center;
@@ -148,7 +157,7 @@
     }
     .heading__btn{
         // text-align: center;
-        margin-top: 48px;
+        // margin-top: 48px;
     }
     .heading__button{
         @include sub1mob;
@@ -181,3 +190,57 @@
     }
 }
 
+@media   (max-width:767px){
+    
+    
+    .header__container{
+        padding:0 19px 0 19px;
+    }
+    .container{
+        padding: 0 19px;
+    }
+    .inner{
+        padding: 56px 0;
+    }
+    .heading{
+        &__title{
+            margin-bottom: 84px;
+        }
+        &__subtitle-bottom{
+            margin-bottom: 81px;
+         }
+        &__text{
+            text-align: center;
+            width: 100%;
+            margin-bottom: 48px;
+        }
+        &__background-circle{
+            width: 138px;
+            height: 178px;
+            left: 187px;
+            top: 112px;
+        }
+        &__background-photo{
+            width: 275px;
+            height: 439px;
+            left: 70px;
+            top: 41px;
+            img{
+                object-fit: contain;
+            }
+        }
+        &__btn{
+            // text-align: center;
+            width: 100%;
+            // margin-top: 48px;
+        }
+        &__button{
+            @include sub1mob;
+            width: 100%;
+            text-align: center;
+            // margin: 0 auto;
+            padding:26px 0;
+            margin-bottom: 64px;
+         }
+    }
+}
