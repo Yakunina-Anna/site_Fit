@@ -141,6 +141,12 @@
     
    
 }
+@media  (max-width:414px){
+    .reviews__button .slick-arrow{
+        width: 39px;
+        height: 39px;
+      }
+}
 
 // слайдер
 .slick-slider{

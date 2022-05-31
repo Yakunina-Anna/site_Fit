@@ -17,7 +17,7 @@
     }
     &__info{
         text-align: center;
-        width: 566px;
+        max-width: 566px;
 
     }
     &__image{
@@ -30,8 +30,11 @@
     }
     &__subtitle{
         @include subtitle1;
-        background: url(../../../image/blog-item-obj.svg) center -4px no-repeat;
-        padding-top: 71px;
+        background: url(../../../image/blog-item-obj.svg) center 0px no-repeat;
+        padding-top: 77px;
+        background-size: 137px 107px;
+        padding-bottom: 20px;
+        max-width: 566px;
     }
     &__avatar{
         margin-top: 56px;

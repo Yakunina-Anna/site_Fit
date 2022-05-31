@@ -37,6 +37,11 @@
         flex-wrap: wrap;
         margin-bottom: 57px;
     }
+    &__video{
+        & iframe{
+            width: 100%;
+        }
+    }
      &__item {
          
          width:370px;
@@ -98,10 +103,11 @@
     }
        
 }
-@media (max-width:768px) {
+@media (max-width:767px) {
     .workout{
        &__button{
            width: 100%;
+           padding: 25px 0;
        }
        &__button-close{
         width: 100%;

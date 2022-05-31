@@ -8,7 +8,9 @@
         }
        
         &__info{
-            width: 493px;
+            margin-top: 40px;
+            max-width: 493px;
+
     
         }
         &__image{
@@ -21,10 +23,11 @@
         }
         &__subtitle{
             @include sub1mob;
-            background: url(../../../image/blog-item-obj.svg) center 0x no-repeat;
+            background-size: 94px 78px;
+            padding-bottom: 15px;
             padding-top: 40px;
-            margin: 0 auto;
             max-width: 376px;
+            margin: 0 auto;
             // background-size: contain;
         }
 
@@ -84,10 +87,19 @@
     }
 }
 
-@media  (max-width:768px){
+@media (min-width:606px) and (max-width:767px){
     .blog-wrapper{
         &__inner{
             padding: 0 28px;
+            
+        }
+    }
+        
+}
+@media  (max-width:606px){
+    .blog-wrapper{
+        &__inner{
+            padding: 0 ;
             
         }
     }

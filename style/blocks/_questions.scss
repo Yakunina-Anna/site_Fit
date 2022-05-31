@@ -196,8 +196,6 @@
         @include subtitle2mob;
         padding: 8px 0;
         padding-right: 97px;
-        
-        
     }
     
     .accordeon__heading::after {
@@ -256,4 +254,12 @@
 
 
 
+}
+
+@media (max-width:768px){
+    .accordeon__heading{
+        @include subtitle2mob;
+        padding: 18px 0;
+        padding-right: 97px;
+    }
 }

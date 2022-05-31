@@ -22,6 +22,7 @@ input[type~="text"], input[type~="tel"], textarea
         display: block;
         @include subtitle2;
         padding-bottom: 8px;
+        align-self:flex-start;
     }
     &__item-input{
         background: $white-body;
@@ -36,19 +37,19 @@ input[type~="text"], input[type~="tel"], textarea
             color:$lightgray;
         }
         &:hover{
-            border: 1px solid $gray-fit;
+            // border: 1px solid $gray-fit;
             box-sizing: border-box;
             
         }
         &:focus{
-             border: 1px solid $gray-fit;
-             border-radius: 10px;
+            //  border: 1px solid $gray-fit;
+            //  border-radius: 10px;
               
               
         }
         &:active{
             border: 1px solid $gray-fit;
-            border-radius: 10px;
+            // border-radius: 10px;
 
              box-sizing: border-box;
         }
@@ -69,13 +70,13 @@ input[type~="text"], input[type~="tel"], textarea
         }
 
         &:hover {
-            border: 1px solid $gray-fit;
+            // border: 1px solid $gray-fit;
 
         }
 
         &:focus {
-            border: 1px solid $gray-fit;
-            border-radius: 10px;
+            // border: 1px solid $gray-fit;
+            // border-radius: 10px;
             outline: 0;
 
         }

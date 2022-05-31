@@ -65,3 +65,28 @@
     z-index: 60;
             
 }
+.up{
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 10000;
+}
+.ti12{
+    position: relative !important;
+}
+
+.del {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-top: 5px;
+   display: none;
+    cursor: pointer;
+}
+.vis {
+    margin-top: 5px;
+    
+   display: inline-block;
+    cursor: pointer;
+}

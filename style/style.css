@@ -40,6 +40,8 @@ input[type~="text"], input[type~="tel"], textarea {
   font-size: 23px;
   line-height: 149%;
   padding-bottom: 8px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .form__item-input {
@@ -70,19 +72,12 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 .form__item-input:hover {
-  border: 1px solid #444B59;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.form__item-input:focus {
-  border: 1px solid #444B59;
-  border-radius: 10px;
-}
-
 .form__item-input:active {
   border: 1px solid #444B59;
-  border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -115,13 +110,7 @@ input[type~="text"], input[type~="tel"], textarea {
   color: #B5B7BC;
 }
 
-.form__item-area:hover {
-  border: 1px solid #444B59;
-}
-
 .form__item-area:focus {
-  border: 1px solid #444B59;
-  border-radius: 10px;
   outline: 0;
 }
 
@@ -516,12 +505,6 @@ input[type~="text"], input[type~="tel"], textarea {
   line-height: 120%;
 }
 
-.header__container {
-  max-width: 1152px;
-  margin: 0 auto;
-  padding: 0 144px;
-}
-
 .header__menu-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -832,7 +815,8 @@ input[type~="text"], input[type~="tel"], textarea {
     font-size: 21px;
     line-height: 110%;
     width: 361px;
-    height: 73px;
+    height: 0;
+    padding: 25px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -842,6 +826,22 @@ input[type~="text"], input[type~="tel"], textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__content-item {
+    width: 100%;
+  }
+  .about__content-text {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 24px;
+  }
+  .about__content-button {
+    width: 100%;
+    height: 0;
+    padding: 25px 0;
   }
 }
 
@@ -1283,6 +1283,16 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
+@media (max-width: 768px) {
+  .accordeon__heading {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    padding: 18px 0;
+    padding-right: 97px;
+  }
+}
+
 #block {
   width: 100%;
   display: none;
@@ -1343,6 +1353,10 @@ input[type~="text"], input[type~="tel"], textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 57px;
+}
+
+.workout__video iframe {
+  width: 100%;
 }
 
 .workout__item {
@@ -1417,9 +1431,10 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .workout__button {
     width: 100%;
+    padding: 25px 0;
   }
   .workout__button-close {
     width: 100%;
@@ -1582,6 +1597,14 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
+@media (max-width: 567px) {
+  .price__item {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 16px 3px 24px 3px;
+  }
+}
+
 .reviews__title {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -1723,6 +1746,13 @@ input[type~="text"], input[type~="tel"], textarea {
     font-weight: 500;
     font-size: 21px;
     line-height: 110%;
+  }
+}
+
+@media (max-width: 414px) {
+  .reviews__button .slick-arrow {
+    width: 39px;
+    height: 39px;
   }
 }
 
@@ -2232,6 +2262,33 @@ input[type~="text"], input[type~="tel"], textarea {
   top: 0;
   right: 0;
   z-index: 60;
+}
+
+.up {
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 10000;
+}
+
+.ti12 {
+  position: relative !important;
+}
+
+.del {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  margin-top: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+.vis {
+  margin-top: 5px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .about-title {
@@ -3107,8 +3164,8 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .my-practice__quote-two ul {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
+    font-size: 14px;
+    line-height: 120%;
     margin-left: 13px;
   }
   .my-practice__content {
@@ -3148,6 +3205,16 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   #history-diplom2 {
     display: block;
+  }
+}
+
+@media (max-width: 414px) {
+  .education__container {
+    padding: 0 4px;
+  }
+  .education__button .slick-arrow {
+    width: 39px;
+    height: 39px;
   }
 }
 
@@ -3607,7 +3674,7 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .blog-item__info {
   text-align: center;
-  width: 566px;
+  max-width: 566px;
 }
 
 .blog-item__image {
@@ -3627,8 +3694,11 @@ input[type~="text"], input[type~="tel"], textarea {
   font-weight: 500;
   font-size: 28px;
   line-height: 120%;
-  background: url(../../../image/blog-item-obj.svg) center -4px no-repeat;
-  padding-top: 71px;
+  background: url(../../../image/blog-item-obj.svg) center 0px no-repeat;
+  padding-top: 77px;
+  background-size: 137px 107px;
+  padding-bottom: 20px;
+  max-width: 566px;
 }
 
 .blog-item__avatar {
@@ -3713,7 +3783,8 @@ input[type~="text"], input[type~="tel"], textarea {
     left: 19px;
   }
   .blog-item__info {
-    width: 493px;
+    margin-top: 40px;
+    max-width: 493px;
   }
   .blog-item__image {
     max-width: 280px;
@@ -3730,10 +3801,11 @@ input[type~="text"], input[type~="tel"], textarea {
     font-weight: 500;
     font-size: 21px;
     line-height: 110%;
-    background: url(../../../image/blog-item-obj.svg) center 0x no-repeat;
+    background-size: 94px 78px;
+    padding-bottom: 15px;
     padding-top: 40px;
-    margin: 0 auto;
     max-width: 376px;
+    margin: 0 auto;
   }
   .blog-item__avatar {
     margin-top: 32px;
@@ -3799,9 +3871,15 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 606px) and (max-width: 767px) {
   .blog-wrapper__inner {
     padding: 0 28px;
+  }
+}
+
+@media (max-width: 606px) {
+  .blog-wrapper__inner {
+    padding: 0;
   }
 }
 
@@ -3828,6 +3906,9 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (max-width: 1243px) {
+  .up {
+    right: 19px;
+  }
   .avatar-img {
     max-width: 81px;
     max-height: 81px;
@@ -3923,8 +4004,12 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (min-width: 768px) and (max-width: 1243px) {
+  .up__image {
+    width: 82px;
+    height: 82px;
+  }
   .header__container {
-    padding: 0 26px 0 19px;
+    padding: 0 26px 0 19px !important;
   }
   .container {
     padding: 0 112px;
@@ -3987,6 +4072,10 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (max-width: 767px) {
+  .up__image {
+    width: 53px;
+    height: 53px;
+  }
   .header__container {
     padding: 0 19px 0 19px;
   }
@@ -4034,6 +4123,18 @@ input[type~="text"], input[type~="tel"], textarea {
     text-align: center;
     padding: 26px 0;
     margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    padding: 0 4px;
+  }
+  .heading__background-photo {
+    width: 244px;
+    height: 439px;
+    left: 70px;
+    top: 27px;
   }
 }
 

@@ -571,7 +571,7 @@
     &__quote-two{
       ul{
           
-          @include mainmob;margin-left: 13px;
+          @include smallmob;margin-left: 13px;
       }
     }
     &__content{
@@ -616,5 +616,14 @@
 }
 #history-diplom2{
   display: block;
+}
+}
+@media  (max-width:414px){
+  .education__container {
+    padding: 0 4px;
+  }
+  .education__button .slick-arrow{
+    width: 39px;
+    height: 39px;
 }
 }
