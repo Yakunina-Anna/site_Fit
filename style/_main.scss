@@ -42,6 +42,26 @@
     justify-content: space-between;
     width:120px;
 }
+svg path {
+    fill:inherit;
+    stroke:inherit;
+    stroke-width:inherit;
+    
+}
+    
+.icon{
+transition: all .6s ease;
+}
+
+.icon:hover {
+    fill:$green-fit;
+}
+.icon-black{
+    fill:$gray-fit;
+}
+.icon-white{
+    fill:$white-body;
+}
 
 .avatar-img{
  max-width: 110px;
@@ -70,23 +90,5 @@
     position: fixed;
     bottom: 20px;
     right: 50px;
-    z-index: 10000;
-}
-.ti12{
-    position: relative !important;
-}
-
-.del {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    margin-top: 5px;
-   display: none;
-    cursor: pointer;
-}
-.vis {
-    margin-top: 5px;
-    
-   display: inline-block;
-    cursor: pointer;
+    z-index: 5;
 }

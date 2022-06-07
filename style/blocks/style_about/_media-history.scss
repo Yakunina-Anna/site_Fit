@@ -111,7 +111,7 @@
         padding: 64px 0 105px 0;
       }
 }
-@media  (max-width:1024px){
+@media  (min-width:414) and (max-width:1024px){
   .about-heading{
     &__container{
       padding: 0 19px !important;
@@ -140,12 +140,7 @@
   .about-heading{
    
     
-    &__title{
-      margin-bottom: 50px;
-    }
-    &__text{
-      margin-bottom: 50px;
-    }
+    
     &__block{
         display: flex;
         align-items: center;
@@ -312,18 +307,21 @@
   }
   
   .about-heading{
-    background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
-  
+    
+    &__container{
+      background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
+  }
     &__inner {
       padding: 129px 0 128px 0;
     }
-    
     &__title{
      max-width: 500px;
+    margin-bottom: 50px;
     }
     &__text{
         max-width: 513px;
         @include mainmob;
+        margin-bottom: 50px;
         
     }
     
@@ -477,18 +475,23 @@
       
   }
   .about-heading{
-    background: no-repeat top/100% url(../../../image/history-adaptiv-mini.jpg);
-    background-size: cover;
+    &__container{
+      background: no-repeat top/100% url(../../../image/history-adaptiv-mini.jpg);
+      // background-size: cover;
+  }
+    
     &__inner {
       padding: 56px 0 38px 0;
     }
     
     &__title{
       max-width: 250px;
+     margin-bottom: 30px;
     }
     &__text{
         max-width: 250px;
         @include smallmob;
+        margin-bottom: 30px;
     }
     
   }
@@ -619,6 +622,12 @@
 }
 }
 @media  (max-width:414px){
+  .about-heading__inner {
+    padding: 13px 0 14px 0;
+}
+  .about-heading__title {
+    margin-bottom: 25px !important;
+}
   .education__container {
     padding: 0 4px;
   }

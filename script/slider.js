@@ -29,11 +29,17 @@ $(document).ready(function(){
     $('.reviews__down-slider').slick({
         arrows:false,
         dots:false,
-        adaptiveHeight:false, 
-        slidesToShow:1, 
-         speed: 500,
-        centerMode: true,
-        variableWidth: true
+//         adaptiveHeight:false, 
+//         draggable: true, 
+//         touchMove:true,
+//         slidesToShow:4, //количество отображаемых сладов за раз
+//         slidesToScroll:5,
+            speed:1000,
+//         centerMode: true,
+        variableWidth: true,
+//         waitForAnimate:true,
+            slidesToShow: 4,
+             slidesToScroll: 3
         
         
     });

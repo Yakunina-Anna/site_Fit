@@ -21,9 +21,9 @@
 
 .about-heading{
     color: $white-body;
-    background: no-repeat top/100% url(../../../image/history-main.jpg);
+   
     &__container{
-      
+        background: no-repeat top/100% url(../../../image/history-main.jpg);
     }
     &__inner{
         padding: 150px 0 105px 0;
@@ -169,7 +169,7 @@
        
        
         &__quote-two{
-            margin-top:19px;
+            margin:19px 0;
             ul{
                 
                 @include small;

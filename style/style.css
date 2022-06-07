@@ -160,6 +160,40 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
+.form__del-in {
+  position: relative !important;
+  width: 100%;
+}
+
+.form__del-text {
+  position: relative !important;
+  width: 100%;
+}
+
+.del {
+  position: absolute;
+  top: 0;
+  right: 36px;
+  margin-top: 18px;
+  display: none;
+  cursor: pointer;
+}
+
+.del-text {
+  position: absolute;
+  top: 0;
+  right: 36px;
+  margin-top: 18px;
+  display: none;
+  cursor: pointer;
+}
+
+.vis {
+  margin-top: 18px;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .errDisabled {
   visibility: hidden;
 }
@@ -173,6 +207,8 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 .button__primary {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
   background-color: #4EAA40;
   border-radius: 10px;
   color: #FFFFFF;
@@ -194,6 +230,8 @@ input[type~="text"], input[type~="tel"], textarea {
   background-color: #444B59;
   border-radius: 10px;
   color: #FFFFFF;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .button__secondary:hover {
@@ -219,6 +257,8 @@ input[type~="text"], input[type~="tel"], textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
 }
 
 .button__small:hover {
@@ -234,6 +274,8 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 .button__strocked {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
   border-radius: 10px;
   border: 4px solid #4EAA40;
   color: #444B59;
@@ -254,6 +296,12 @@ input[type~="text"], input[type~="tel"], textarea {
     font-weight: 500;
     font-size: 21px;
     line-height: 110%;
+  }
+  .button__primary:hover {
+    background-color: none;
+  }
+  .button__primary:active {
+    background-color: #444B59;
   }
 }
 
@@ -733,6 +781,14 @@ input[type~="text"], input[type~="tel"], textarea {
           align-items: center;
 }
 
+.about__certificate-item {
+  height: 54vh;
+}
+
+.owl-carousel .owl-item img {
+  height: 100%;
+}
+
 .about__popup .mfp-wrap {
   margin: 0 auto;
   background-color: none;
@@ -764,8 +820,7 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .about__popup .mfp-content {
   background: transparent;
-  opacity: 0.8;
-  max-width: 1440px;
+  max-width: 1152px;
   position: relative;
 }
 
@@ -779,6 +834,13 @@ input[type~="text"], input[type~="tel"], textarea {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.about__popup .mfp-close {
+  position: absolute;
+  z-index: 700;
+  right: -40px;
+  top: 0;
 }
 
 @media (max-width: 1243px) {
@@ -826,6 +888,9 @@ input[type~="text"], input[type~="tel"], textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .about__popup .mfp-content {
+    max-width: 735px;
   }
 }
 
@@ -1035,7 +1100,7 @@ input[type~="text"], input[type~="tel"], textarea {
   width: 60px;
   background-image: url(../../image/icon/open.svg);
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 
 .active::after {
@@ -1486,7 +1551,6 @@ input[type~="text"], input[type~="tel"], textarea {
   position: absolute;
   top: -35px;
   width: 223px;
-  height: 140px;
 }
 
 .price__item-title {
@@ -1738,6 +1802,11 @@ input[type~="text"], input[type~="tel"], textarea {
     font-size: 14px;
     line-height: 120%;
   }
+  .reviews__item-list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
   .reviews__button {
     margin-top: 28px;
     margin-bottom: 48px;
@@ -1803,6 +1872,18 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .reviews__button .slick-arrow.slick-next.slick-disabled {
   background: url(../../image/reviews/icon/reviews_next-disable.svg) 0 0/100% no-repeat;
+}
+
+@media (max-width: 768px) {
+  .reviews__button .slick-arrow.slick-next {
+    margin-left: 16px;
+  }
+}
+
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
 }
 
 .contacts {
@@ -1901,6 +1982,10 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .contacts__links {
   margin-top: 40px;
+}
+
+.contacts__link-item img:hover {
+  fill: #4EAA40;
 }
 
 .contacts__down {
@@ -2063,7 +2148,6 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 .footer__menu {
-  margin-left: 98px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 137px 137px 137px 167px;
@@ -2240,6 +2324,29 @@ input[type~="text"], input[type~="tel"], textarea {
   width: 120px;
 }
 
+svg path {
+  fill: inherit;
+  stroke: inherit;
+  stroke-width: inherit;
+}
+
+.icon {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.icon:hover {
+  fill: #4EAA40;
+}
+
+.icon-black {
+  fill: #444B59;
+}
+
+.icon-white {
+  fill: #FFFFFF;
+}
+
 .avatar-img {
   max-width: 110px;
   max-height: 110px;
@@ -2269,26 +2376,7 @@ input[type~="text"], input[type~="tel"], textarea {
   position: fixed;
   bottom: 20px;
   right: 50px;
-  z-index: 10000;
-}
-
-.ti12 {
-  position: relative !important;
-}
-
-.del {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  margin-top: 5px;
-  display: none;
-  cursor: pointer;
-}
-
-.vis {
-  margin-top: 5px;
-  display: inline-block;
-  cursor: pointer;
+  z-index: 5;
 }
 
 .about-title {
@@ -2317,6 +2405,9 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .about-heading {
   color: #FFFFFF;
+}
+
+.about-heading__container {
   background: no-repeat top/100% url(../../../image/history-main.jpg);
 }
 
@@ -2496,7 +2587,7 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 .my-practice__quote-two {
-  margin-top: 19px;
+  margin: 19px 0;
 }
 
 .my-practice__quote-two ul {
@@ -2731,7 +2822,7 @@ input[type~="text"], input[type~="tel"], textarea {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 414) and (max-width: 1024px) {
   .about-heading__container {
     padding: 0 19px !important;
   }
@@ -2752,12 +2843,6 @@ input[type~="text"], input[type~="tel"], textarea {
   .about-quote {
     border-left: 3px solid #444B59;
     padding-left: 13px;
-  }
-  .about-heading__title {
-    margin-bottom: 50px;
-  }
-  .about-heading__text {
-    margin-bottom: 50px;
   }
   .about-heading__block {
     display: -webkit-box;
@@ -2922,7 +3007,7 @@ input[type~="text"], input[type~="tel"], textarea {
     font-size: 16px;
     line-height: 130%;
   }
-  .about-heading {
+  .about-heading__container {
     background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
   }
   .about-heading__inner {
@@ -2930,12 +3015,14 @@ input[type~="text"], input[type~="tel"], textarea {
   }
   .about-heading__title {
     max-width: 500px;
+    margin-bottom: 50px;
   }
   .about-heading__text {
     max-width: 513px;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
+    margin-bottom: 50px;
   }
   .about-todes__image {
     margin-bottom: 24px;
@@ -3078,21 +3165,22 @@ input[type~="text"], input[type~="tel"], textarea {
     border-left: 3px solid #444B59;
     padding-left: 13px;
   }
-  .about-heading {
+  .about-heading__container {
     background: no-repeat top/100% url(../../../image/history-adaptiv-mini.jpg);
-    background-size: cover;
   }
   .about-heading__inner {
     padding: 56px 0 38px 0;
   }
   .about-heading__title {
     max-width: 250px;
+    margin-bottom: 30px;
   }
   .about-heading__text {
     max-width: 250px;
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
+    margin-bottom: 30px;
   }
   .about-todes__image {
     margin-bottom: 40px;
@@ -3209,6 +3297,12 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (max-width: 414px) {
+  .about-heading__inner {
+    padding: 13px 0 14px 0;
+  }
+  .about-heading__title {
+    margin-bottom: 25px !important;
+  }
   .education__container {
     padding: 0 4px;
   }
@@ -4127,9 +4221,6 @@ input[type~="text"], input[type~="tel"], textarea {
 }
 
 @media (max-width: 414px) {
-  .container {
-    padding: 0 4px;
-  }
   .heading__background-photo {
     width: 244px;
     height: 439px;

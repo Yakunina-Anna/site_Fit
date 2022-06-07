@@ -1,24 +1,6 @@
 
 $(document).ready(function() {
-	$('.heading__button').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#name',
-    // mainClass: 'send-form',
-    removalDelay: 300,
-		// When elemened is focused, some mobile browsers in some cases zoom in
-		// It looks not nice, so we disable it:
-		// callbacks: {
-		// 	beforeOpen: function() {
-		// 		if($(window).width() < 700) {
-		// 			this.st.focus = false;
-		// 		} else {
-		// 			this.st.focus = '#name';
-		// 		}
-		// 	}
-		// }
-	});
-
+	
   $(document).on('click', '#mfp__go', function (e) {
     e.preventDefault();
     
@@ -34,15 +16,21 @@ $(document).ready(function() {
 $('.popup-about-diploma').magnificPopup({
 	preloader: false,
 	mainClass: 'about__popup',
+	closeBtnInside:true,
 	callbacks:{
 		open(){
 			
-				$("#diploma").owlCarousel({
+				$(".owl-carousel-dip").owlCarousel({
 					margin:10,
 					loop:true,
 					autoWidth:true,
-					// items:4,
+					items:2,
 					stagePadding: 20,
+					pagination : true,
+					// Responsive 
+					responsive: true,
+					responsiveRefreshRate : 200,
+					responsiveBaseWidth: window,
 					responsive:{
 						1240:{
 							items:2
@@ -67,7 +55,7 @@ $('.popup-about-certif').magnificPopup({
 	callbacks:{
 		open(){
 			
-				$("#certif").owlCarousel({
+				$(".owl-carousel-serf").owlCarousel({
 					margin:10,
 					loop:true,
 					autoWidth:true,

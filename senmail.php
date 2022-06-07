@@ -25,8 +25,8 @@ if(trim(!empty($_POST['name']))){
     $body.='<p><strong>Имя:</strong>'.$_POST['name'].'</p>'
 }
 
-if(trim(!empty($_POST['email']))){
-    $body.='<p><strong>E-mail:</strong>'.$_POST['email'].'</p>'
+if(trim(!empty($_POST['phone']))){
+    $body.='<p><strong>Телефон:</strong>'.$_POST['phone'].'</p>'
 }
 
 if(trim(!empty($_POST['message']))){
@@ -36,7 +36,7 @@ if(trim(!empty($_POST['message']))){
 // $mail->Body= $body;
 
 //Отправляем пиьсмо
-if(!mail->send()){
+if(!$mail->send()){
     $message ='Ошибка';
 } else{
     $message = 'Данные отправлены!'

@@ -1,3 +1,8 @@
+svg path {
+    fill:inherit;
+    stroke:inherit;
+    stroke-width:inherit;
+    }
 .contacts{
     background-color: $green-body;
     // &__container{
@@ -74,6 +79,11 @@
     &__links{
        
         margin-top: 40px;
+    }
+    &__link-item{
+        & img:hover{
+            fill: $green-fit
+        }
     }
    
     &__down{

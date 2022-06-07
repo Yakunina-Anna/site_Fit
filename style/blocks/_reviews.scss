@@ -34,7 +34,8 @@
         }
     }
     &__item-images{
-        padding-right:28px;                                          width: 120px;
+        padding-right:28px;
+        width: 120px;
         height: 120px;             
     }
     &__item-img{
@@ -126,6 +127,9 @@
             }
         }
         &__item-text{
+            @include smallmob;
+        }
+        &__item-list{
             @include smallmob
         }
         &__button{
@@ -222,7 +226,11 @@ overflow: hidden;
 }
 
 
-
+@media (max-width:768px){
+    .reviews__button .slick-arrow.slick-next{
+        margin-left: 16px;
+    }
+}
 
 
 
