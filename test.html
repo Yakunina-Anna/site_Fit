@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8" />
+  </head>
+  <body>
+  <div id="output"></div>
+  <form name="user" action="./data.php">
+  <p><input type="text" name="theme" placeholder="Тема сообщения" /></p>
+  <p><input type="text" name="name" placeholder="Введите имя" /></p>
+  <p><input type="text" name="email" placeholder="Введите email" /></p>
+  <p><textarea rows="10" cols="45" name="text"></textarea></p>
+  <p><input type="submit" name="submit" value="Отправить" /></p>
+  </form>
+  <script>
+  
+  var form = document.forms.user;
+  
+  form.submit.addEventListener("click", sendRequest);
+  
+  function sendRequest(event){
+       
+      event.preventDefault();
+      var formData = new FormData(form);
+      
+      var request = new XMLHttpRequest();
+   
+      request.open("POST", form.action);
+       
+      request.onreadystatechange = function () {
+          if (request.readyState == 4 && request.status == 200)
+              document.getElementById("output").innerHTML=request.responseText;
+      }
+      request.send(formData);
+  }
+  </script>
+  <a href="mailto:simonya6ka@gmail.com">e-mail почта</a>. 
+  </body>
+  </html>

@@ -79,17 +79,17 @@ $('.popup-about-certif').magnificPopup({
 
 })
 
+$(".form-popup__close").click(function() {
+	$('.form-popup').removeClass('open-form');
+	$('body').removeClass('fixed')
+  });
 		
 });
 
-
-// $(document).ready(function() {
-// 	$('.popup-with-title').magnificPopup({
-// 		type: 'inline',
-		
-
-// 		// When elemened is focused, some mobile browsers in some cases zoom in
-// 		// It looks not nice, so we disable it:
-	
-// 	});
-// });
+$(document).mouseup(function (e) {
+    var container = $(".form-popup__text");
+    if (container.has(e.target).length === 0){
+		$('.form-popup').removeClass('open-form');
+		$('body').removeClass('fixed')
+    }
+});

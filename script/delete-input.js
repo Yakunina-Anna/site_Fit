@@ -29,7 +29,7 @@ elt.addEventListener('input', (e) => {
     else{
        icont.classList.add('vis')
      }
-    console.log(elt.value)
+   
 })
 
 icont.addEventListener('click', () => {

@@ -13,7 +13,7 @@
 // Кнопки
 @import "./_button.scss";
 // Попапы
-@import "./popup";
+@import "./popup-form";
 
 // Нижняя форма отправки
 @import "./_formDown.scss";
@@ -158,6 +158,10 @@ body {
     color: $gray-fit;
     @include main;
      
+}
+.body{
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 

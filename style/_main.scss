@@ -92,3 +92,10 @@ transition: all .6s ease;
     right: 50px;
     z-index: 5;
 }
+
+.fixed{
+    // position:fixed;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+}
