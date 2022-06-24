@@ -1,0 +1,40 @@
+.politic{
+    background-color: $white-body;
+    color: #000000;
+    & h2{
+        @include title-h2;
+        margin-bottom: 40px;
+    }
+    &__subtitle{
+        @include subtitle1;
+        margin-bottom: 24px;
+    }
+    &__content{
+        @include main;
+        margin-bottom: 40px;
+    }
+    &__lead{
+        margin-bottom: 24px;
+    }
+}
+@media (max-width:1024px) {
+    .politic{
+        background-color: $white-body;
+        color: #000000;
+        & h2{
+            @include h2mob;
+            margin-bottom: 30px;
+        }
+        &__subtitle{
+            @include subtitle2mob;
+            margin-bottom: 14px;
+        }
+        &__content{
+            @include mainmob;
+            margin-bottom: 30px;
+        }
+        &__lead{
+            margin-bottom: 14px;
+        }
+    }
+}

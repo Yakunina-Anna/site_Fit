@@ -671,6 +671,14 @@ input[type~="text"], input[type~="tel"], textarea {
   color: #4EAA40;
 }
 
+.main-photo__desk {
+  display: block;
+}
+
+.main-photo__mob {
+  display: none;
+}
+
 .heading {
   background-color: #F3FFF4;
 }
@@ -875,6 +883,7 @@ input[type~="text"], input[type~="tel"], textarea {
 
 .about__popup .mfp-content {
   background: transparent;
+  width: 80%;
   max-width: 1152px;
   position: relative;
 }
@@ -944,12 +953,12 @@ input[type~="text"], input[type~="tel"], textarea {
         -ms-flex-align: center;
             align-items: center;
   }
-  .about__popup .mfp-content {
-    max-width: 735px;
-  }
 }
 
 @media (max-width: 768px) {
+  .about__popup .mfp-content {
+    max-width: 735px;
+  }
   .about__content-item {
     width: 100%;
   }
@@ -957,6 +966,9 @@ input[type~="text"], input[type~="tel"], textarea {
     width: 100%;
     height: 100%;
     margin-bottom: 24px;
+  }
+  .about__certificate-item {
+    height: 31vh;
   }
   .about__content-button {
     width: 100%;
@@ -1781,6 +1793,7 @@ input[type~="text"], input[type~="tel"], textarea {
   font-weight: 400;
   font-size: 17px;
   line-height: 120%;
+  -webkit-text-size-adjust: 100%;
 }
 
 .reviews__item-list {
@@ -2329,6 +2342,66 @@ svg path {
     font-size: 12px;
     line-height: 120%;
     margin-bottom: 8px;
+  }
+}
+
+.politic {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.politic h2 {
+  font-weight: 900;
+  font-size: 39px;
+  line-height: 120%;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+}
+
+.politic__subtitle {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+
+.politic__content {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.politic__lead {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+  .politic {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  .politic h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    margin-bottom: 30px;
+  }
+  .politic__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 14px;
+  }
+  .politic__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 30px;
+  }
+  .politic__lead {
+    margin-bottom: 14px;
   }
 }
 
@@ -4226,6 +4299,12 @@ svg path {
 }
 
 @media (max-width: 767px) {
+  .main-photo__desk {
+    display: none;
+  }
+  .main-photo__mob {
+    display: block;
+  }
   .up__image {
     width: 53px;
     height: 53px;
@@ -4285,7 +4364,7 @@ svg path {
     width: 244px;
     height: 439px;
     left: 70px;
-    top: 27px;
+    top: 25px;
   }
 }
 

@@ -14,12 +14,14 @@ $(document).ready(function() {
   });
 
 $('.popup-about-diploma').magnificPopup({
-	preloader: false,
+	// type: 'image',
+	preloader: true,
+	fixedContentPos: false,
 	mainClass: 'about__popup',
 	closeBtnInside:true,
 	callbacks:{
 		open(){
-			
+			 $('body').addClass('fixed');
 				$(".owl-carousel-dip").owlCarousel({
 					margin:10,
 					loop:true,
@@ -43,6 +45,9 @@ $('.popup-about-diploma').magnificPopup({
 				});
 			  
 			
+		},
+		close(){
+			$('body').removeClass('fixed');
 		}
 		
 	}
@@ -52,9 +57,11 @@ $('.popup-about-certif').magnificPopup({
 	preloader: false,
 	// type: 'inline',
 	mainClass: 'about__popup',
+	type: "inline",
+	fixedContentPos: false,
 	callbacks:{
 		open(){
-			
+			$('body').addClass('fixed');
 				$(".owl-carousel-serf").owlCarousel({
 					margin:10,
 					loop:true,
@@ -73,6 +80,9 @@ $('.popup-about-certif').magnificPopup({
 				});
 			  
 			
+		},
+		close(){
+			$('body').removeClass('fixed');
 		}
 		
 	}

@@ -191,9 +191,16 @@
         overflow-y: scroll;
         -webkit-overflow-scrolling:touch;
     }
+   
 }
 
 @media   (max-width:767px){
+    .main-photo__desk{
+        display: none;
+    }
+    .main-photo__mob{
+        display:block;
+    }
     .up__image{
         width: 53px;
         height: 53px;
@@ -257,7 +264,7 @@
         width: 244px;
         height: 439px;
         left: 70px;
-        top: 27px;
+        top: 25px;
         
     }
     

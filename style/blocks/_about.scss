@@ -80,7 +80,7 @@
     height: 100%;
     z-index: 6;
     overflow: hidden;
-    position: fixed;
+    // position: fixed;
     background: #252A34;
     opacity: 0.8;
     -webkit-transition: all 0.15s ease-out;
@@ -90,6 +90,7 @@
 
   .about__popup .mfp-content{
     background: transparent;
+    width: 80%;
     max-width: 1152px;
     position: relative;
   }
@@ -153,13 +154,14 @@
         align-items: center;
     }
 
-    .about__popup .mfp-content{
-        max-width: 735px;
-    }
     
 }
 
 @media  (max-width:768px) {
+    .about__popup .mfp-content{
+        max-width: 735px;
+    }
+    
     .about__content-item{
         width: 100%;
     }
@@ -168,6 +170,10 @@
         height: 100%;
         margin-bottom: 24px;
 
+    }
+
+    .about__certificate-item{
+        height: 31vh;
     }
     .about__content-button{
         width: 100%;

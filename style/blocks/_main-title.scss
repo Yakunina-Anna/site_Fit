@@ -1,4 +1,9 @@
-
+.main-photo__desk{
+    display: block;
+}
+.main-photo__mob{
+    display:none;
+}
 
 .heading{
     background-color: $green-body;
@@ -15,6 +20,7 @@
     }
 
     &__background-photo{
+      
         overflow: hidden;
         max-width: 660px;
         max-height: 661px;

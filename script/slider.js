@@ -29,17 +29,36 @@ $(document).ready(function(){
     $('.reviews__down-slider').slick({
         arrows:false,
         dots:false,
-//         adaptiveHeight:false, 
-//         draggable: true, 
-//         touchMove:true,
-//         slidesToShow:4, //количество отображаемых сладов за раз
-//         slidesToScroll:5,
-            speed:1000,
+         speed:1000,
 //         centerMode: true,
         variableWidth: true,
 //         waitForAnimate:true,
             slidesToShow: 4,
-             slidesToScroll: 3
+             slidesToScroll: 3,
+             responsive: [
+               
+                  {
+                    breakpoint:1024,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                  {
+                    breakpoint:555,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1
+                    }
+                  },
+                  {
+                    breakpoint:350,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  },
+             ]
         
         
     });

@@ -50,6 +50,7 @@
 
     &__item-text{
         @include small;
+        -webkit-text-size-adjust: 100%
        
     }
     &__item-list{

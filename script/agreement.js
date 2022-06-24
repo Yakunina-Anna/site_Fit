@@ -4,13 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     form.addEventListener('submit',formSend);
 
     async function formSend(e){
-        // e.preventDefault();
-        // let errorq = formValidate(form);
-        // if (errorq===0){
-        //     console.log('ok');
-        // }else{
-        //     console.log('error');
-        // }
+       
         e.preventDefault();
 
        let error = formValidate(form);
@@ -26,30 +20,13 @@ document.addEventListener('DOMContentLoaded', function(){
             if (request.readyState == 4 && request.status == 200)
                 document.getElementById("form-popup").classList.add('open-form');
                 document.body.classList.add('fixed');
-                // alert(request.responseText);
                 console.log(request.responseText);
                 form.reset();
         }
         request.send(formData);
 
        }
-    //    if (error===0){
-    //     form.classList.add('_sending');
-    //     let response = await fetch('sendmail.php',{
-    //         method: 'POST'
-    //         // body:formData
-    //     });
-    //     if(response.ok){
-    //         let result= await response.json();
-    //         alert(result.message);
-    //         formPreview.innerHTML='';
-    //         form.classList.remove('_sending');
-    //         form.reset();
-    //     } else{
-    //         form.classList.remove('_sending');
-    //         alert("Ошибка отправки")
-    //     }
-    //    }
+   
         else {
         alert("заполните все поля")
        }
@@ -77,9 +54,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     formAddError(input);
                     error++;
                 }
-                // else {
-                //     return error;
-                // }
+                
             }
             else{
                 if (input.value===''){
