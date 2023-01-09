@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     $('.burger').click(function() {
         
@@ -25,5 +26,11 @@ $(document).mouseup(function (e) {
 		$('body').removeClass('fixed')
     }
 });
-
+$(document).mouseup(function (e) {
+    var burgerContent = $(".burger__content");
+    if (burgerContent.has(e.target).length !== 0){
+		$('.burger__menu').removeClass('open-menu');
+		$('body').removeClass('fixed')
+    }
+});
 

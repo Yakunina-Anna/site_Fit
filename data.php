@@ -1,7 +1,7 @@
 <?php
     $theme = "Заявка на тренировку";
     $useremail = "lebedeva-fit@info.ru";
-    $youremail = "annaredfox1@yandex.ru";
+    $youremail = "Lebedeva-fit1991@yandex.ru";
 
     $name = "пользователя";
     $userphone = "";
