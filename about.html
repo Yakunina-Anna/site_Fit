@@ -105,17 +105,9 @@
                                 <img src="./image/icon/call.svg" alt="tel">
                                 <a href="tel:+79306698991" class="burger__tel-item">8 (930) 669-89-91</a>
                             </div>
-                            <div class="burger__mail burger__contact">
-                                <img src="./image/icon/mail-mini.svg" alt="mail">
-                                <a href="mailto:yanchiklebedeva1991@mail.ru" class="burger__mail-item">yanchiklebedeva1991@mail.ru</a>
-                            </div>
                         </div>
                     </div>
                 </div>
-                
-                
-                
-               
             </div>
         </div>
     </header>
@@ -124,20 +116,19 @@
             <div class="container about-heading__container">
                 <div class="about-heading__inner">
                     <h2 class="about-heading__title about-title">Моя фитнес история</h2>
-                    
                     <p class="about-heading__text">Меня зовут Яна&nbsp;Лебедева. Я&nbsp;- профессиональный тренер по&nbsp;фитнесу. В&nbsp;этой сфере я&nbsp;более 7&nbsp;лет. Мне&nbsp;бы хотелось рассказать вам&nbsp;свою историю: с&nbsp;чего я&nbsp;начинала, и&nbsp;как менялся мой&nbsp;взгляд на&nbsp;фитнес, тренировки.</p>
                     <div class="about-heading__block">
-                        <img src="./image/icon/avatar.png" alt="" class="avatar-img">
+                        <div class="avatar-img_container">
+                            <img src="./image/icon/avatar.jpg" alt="" class="avatar-img">
+                        </div>
                         <div class="about-heading__block-content">
                             <p class="about-heading__block-title">Яна Лебедева</p>
                             <p class="about-heading__block-text">фитнес-тренер</p>
 
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            
         </section>
         <section class="about-todes" id="about-todes">
             <div class="container ">
@@ -191,24 +182,16 @@
                         <div class="pilates-trener__grid-item">
                             <h6 class="pilates-trener__title about-subtitle">Polestar Pilates</h6>
                             <p class="pilates-trener__text">Я начала&nbsp;учиться, пробовать разные методики. Мне очень хотелось вернуться&nbsp;к жизни&nbsp;без боли. Наконец, я пришла&nbsp;в школу&nbsp;Polestar Pilates, где уже первое обучение перевернуло&nbsp;моё представление о фитнесе в целом.</p>
-                            
-
-                        </div> 
+                        </div>
                        <div class="pilates-trener__grid-item">
-                           
-                           <img class="pilates-trener__img" src="./image/historyfoto5.jpg" alt="фото пилатес ">
-                           
-                       </div> 
+                           <img class="pilates-trener__img" src="./image/historyPhoto5.jpg" alt="фото пилатес ">
+                       </div>
                         <div class="pilates-trener__grid-item">
-                            <img class="pilates-trener__img" src="./image/historyfoto7.jpg" alt="фото пилатес ">
-                            
-                        </div> 
+                            <img class="pilates-trener__img" src="./image/historyPhoto7.jpg" alt="фото пилатес ">
+                        </div>
                         <div class="pilates-trener__grid-item">
-                           
-                            <img class="pilates-trener__img" src="./image/historyfoto6.jpg" alt="фото пилатес ">
-                        </div> 
-                         
-                          
+                            <img class="pilates-trener__img" src="./image/historyPhoto6.jpg" alt="фото пилатес ">
+                        </div>
                      </div>
                 </div>
             </div>
@@ -241,7 +224,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <img class="my-practice__img" src="./image/historyfoto8.jpg" alt="фото пилатес ">
+                            <img style="width: 100%;" src="./image/historyfoto8.jpg" alt="фото пилатес ">
                         </div> 
                         <div class="my-practice__grid-item">
                             <p class="about-subtitle my-practice__subtitle">Всего&nbsp;вышеперечисленного&nbsp;я помогаю добиться&nbsp;своим подопечным</p>
@@ -267,8 +250,11 @@
                             </div>
                         </div>
                         <div class="my-practice__grid-item">
-                            <img class="my-practice__img" src="./image/historyfoto9.jpg" alt="фото пилатес ">
-                            
+                            <!-- <img class="my-practice__img" src="./image/historyPhoto9.jpg" alt="фото пилатес "> -->
+                            <div class="my-practice__img">
+                                <img class="my-practice__img-content" src="./image/historyPhoto8.jpg" alt="фото пилатес ">
+                            </div>
+                            <!-- <img class="my-practice__img" src="./image/historyfoto9.jpg" alt="фото пилатес "> -->
                         </div> 
                         <div class="my-practice__grid-item">
                             <p class="my-practice__title about-subtitle">Благодаря&nbsp;грамотному фитнесу я помогла и продолжаю помогать людям, в том числе и себе, быть здоровыми, красивыми, двигаться полноценно</p>
@@ -317,6 +303,12 @@
                              <div class="education__certificate-item">
                                 <img src="./image/certificate/certificate9.png" alt="сертификат9">
                              </div>
+                            <div class="education__certificate-item">
+                                <img data-lazy="./image/certificate/certificate10.jpg" alt="сертификат10">
+                            </div>
+                            <div class="education__certificate-item">
+                                <img data-lazy="./image/certificate/certificate11.jpg" alt="сертификат11">
+                            </div>
                         </div>
                         <div class="education__button education__button-cerf"></div>
                     </div>
@@ -370,10 +362,6 @@
                 <div class="footer__tel">
                     <img src="./image/icon/call.svg" alt="tesl">
                     <a href="tel:+79306698991" class="footer__tel-item">8 (930) 669-89-91</a>
-                </div>
-                <div class="footer__mail">
-                    <img src="./image/icon/mail-mini.svg" alt="mail">
-                    <a href="mailto:yanchiklebedeva1991@mail.ru" class="footer__mail-item">yanchiklebedeva1991@mail.ru</a>
                 </div>
             </div>
             <div class="footer__menu">

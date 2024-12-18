@@ -1,15 +1,8 @@
-
-
 .container {
     max-width: 1152px;
     margin: 0 auto;
     padding:0 144px;
 }
-
-
-
-
-
 .link{
     font-size: inherit;
     color: inherit;
@@ -34,9 +27,7 @@
     span {
         color: $green-fit
     }
-    
 }
-
 .seti-links{
     display: flex;
     justify-content: space-between;
@@ -46,9 +37,13 @@ svg path {
     fill:inherit;
     stroke:inherit;
     stroke-width:inherit;
-    
 }
-    
+.avatar-img_container {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden
+}
 .icon{
 transition: all .6s ease;
 }
@@ -64,8 +59,9 @@ transition: all .6s ease;
 }
 
 .avatar-img{
- max-width: 110px;
- max-height: 110px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
 }
 .adaptiv-close{
     display: block;
@@ -83,7 +79,6 @@ transition: all .6s ease;
     top:0;
     right: 0;
     z-index: 60;
-            
 }
 .up{
     opacity: 0;

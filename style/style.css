@@ -1221,6 +1221,7 @@ input[type~=text], input[type~=tel], textarea {
     width: 300px;
   }
 }
+
 @media (max-width: 1243px) {
   .workout__inner {
     margin-top: 0;
@@ -1607,7 +1608,7 @@ svg path {
   width: 100%;
 }
 .contacts h2 {
-  text-align: left;
+  text-align: center;
   margin-bottom: 52px;
 }
 .contacts__item {
@@ -2000,12 +2001,17 @@ svg path {
 .icon-white {
   fill: #FFFFFF;
 }
-
-.avatar-img {
-  max-width: 110px;
-  max-height: 110px;
+.avatar-img_container {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden
 }
-
+.avatar-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
 .adaptiv-close {
   display: block;
   position: relative;
@@ -2067,7 +2073,7 @@ svg path {
   color: #FFFFFF;
 }
 .about-heading__container {
-  background: no-repeat top/100% url(../../../image/history-main.jpg);
+  background: no-repeat top/100% url(../../../image/about_new_desk.jpg);
 }
 .about-heading__inner {
   padding: 150px 0 105px 0;
@@ -2218,7 +2224,15 @@ svg path {
   line-height: 130%;
 }
 .my-practice__img {
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.my-practice__img-content {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .education {
@@ -2249,6 +2263,15 @@ svg path {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.education__certificate-item {
+  max-height: 600px;
+  /* max-width: 800px; */
+  img {
+  height: 100%;
+object-fit: contain;}
+}
+
 .education__diplom-left {
   width: 481px;
 }
@@ -2563,7 +2586,7 @@ svg path {
     line-height: 130%;
   }
   .about-heading__container {
-    background: no-repeat top/100% url(../../../image/history-adaptiv.jpg);
+    background :url(./image/about_new_tablet.jpg) no-repeat center center / cover;
   }
   .about-heading__inner {
     padding: 129px 0 128px 0;
@@ -2698,7 +2721,7 @@ svg path {
     padding-left: 13px;
   }
   .about-heading__container {
-    background: no-repeat top/100% url(../../../image/history-adaptiv-mini.jpg);
+    background: url(./image/about_new_tablet.jpg) no-repeat center center / cover;
   }
   .about-heading__inner {
     padding: 56px 0 38px 0;
@@ -3409,9 +3432,9 @@ svg path {
   .up {
     right: 19px;
   }
-  .avatar-img {
-    max-width: 81px;
-    max-height: 81px;
+  .avatar-img_container {
+    width: 81px;
+    height: 81px;
   }
   .header__menu-inner {
     margin: 9px 0;
