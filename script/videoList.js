@@ -1,47 +1,46 @@
-
 const videoData = [
   {
-    src: "https://vkvideo.ru/video-229182924_456239022",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239022&hd=2",
     title: "Миофасциальный релиз",
     type: "all"
   },
   {
-    src: "https://vkvideo.ru/video-229182924_456239029",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239029&hd=2",
     title: "Тренировка для стоп",
     type: "all"
   },
   {
-    src: "https://vkvideo.ru/video-229182924_456239028",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239028&hd=2",
     title: "Артикуляция позвоночника",
     type: "all"
   },
   {
-    src: "https://vksport.vkvideo.ru/video-229182924_456239027",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239027&hd=2",
     title: "Комплекс на подвижность шеи, плечевого пояса и лопаток",
     type: "all"
   },
   {
-    src: "https://vksport.vkvideo.ru/video-229182924_456239025",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239025&hd=2",
     title: "Пилатес на каждый день",
     type: "all"
   },
   {
-    src: "https://vksport.vkvideo.ru/video-229182924_456239020",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239020&hd=2",
     title: "Комплекс для грудного отдела позвоночника",
     type: "all"
   },
   {
-    src: "https://vkvideo.ru/video-229182924_456239029",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239029&hd=2",
     title: "Комплекс для расслабления мышц спины, шеи, плечевого пояса",
     type: "all"
   },
   {
-    src: "https://vkvideo.ru/video-229182924_456239021",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239021&hd=2",
     title: "Комплекс для проработки мышц КОРа",
     type: "all"
   },
   {
-    src: "https://vksport.vkvideo.ru/video-229182924_456239023",
+    src: "https://vkvideo.ru/video_ext.php?oid=-229182924&id=456239023&hd=2",
     title: "Растяжка мышц ног и спины",
     type: "all"
   },
@@ -101,10 +100,6 @@ function renderVideos(pageType) {
 
   const container = document.getElementById(config.containerId);
 
-  console.log(`Рендер для страницы: ${pageType}`);
-  console.log(`Ищем контейнер: #${config.containerId}`);
-  console.log(`Найден контейнер:`, container);
-
   if (!container) {
     console.error(`Контейнер не найден для страницы: ${pageType}`);
     return;
@@ -112,12 +107,9 @@ function renderVideos(pageType) {
 
   // Получаем видео для этой страницы (включая 'all')
   const pageVideos = getVideosByPageType(pageType);
-  console.log(`Найдено видео для ${pageType}:`, pageVideos.length);
-
   const startIndex = 0;
   const endIndex = currentPages[pageType] * config.videosPerPage;
   const videosToShow = pageVideos.slice(startIndex, endIndex);
-  console.log(`Показываем видео:`, videosToShow.length);
 
   container.innerHTML = videosToShow.map(video => createVideoElement(video)).join('');
 
@@ -130,23 +122,13 @@ function updateButtons(pageType) {
   const openBtn = document.getElementById(config.openBtnId);
   const closeBtn = document.getElementById(config.closeBtnId);
 
-  console.log(`Обновление кнопок для: ${pageType}`);
-  console.log(`Кнопка "Открыть":`, openBtn);
-  console.log(`Кнопка "Закрыть":`, closeBtn);
-
   const pageVideos = getVideosByPageType(pageType);
   const totalPages = Math.ceil(pageVideos.length / config.videosPerPage);
 
-  console.log(`Всего страниц: ${totalPages}, текущая: ${currentPages[pageType]}`);
-
   if (currentPages[pageType] >= totalPages) {
-    // Все видео показаны
-    console.log(`Скрываем кнопку "Показать еще" для ${pageType}`);
     if (openBtn) openBtn.style.display = 'none';
     if (closeBtn) closeBtn.style.display = 'block';
   } else {
-    // Есть еще видео
-    console.log(`Показываем кнопку "Показать еще" для ${pageType}`);
     if (openBtn) openBtn.style.display = 'block';
     if (closeBtn) closeBtn.style.display = 'none';
   }
@@ -172,18 +154,15 @@ function closeVideoBlock(pageType) {
 
 // Инициализация для всех страниц
 function initVideoLists() {
-  console.log('Инициализация видеосписков...');
 
   // Проверяем, какая страница загружена и инициализируем соответствующие видео
   if (document.getElementById('workoutHomeContainer')) {
-    console.log('Найдена главная страница');
     renderVideos('home');
   } else {
     console.log('Главная страница НЕ найдена');
   }
 
   if (document.getElementById('workoutBlogContainer')) {
-    console.log('Найдена страница блога');
     renderVideos('blog');
   } else {
     console.log('Страница блога НЕ найдена');
