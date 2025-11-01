@@ -613,6 +613,7 @@ input[type~=text], input[type~=tel], textarea {
   align-items: center;
 }
 .about__title {
+  margin-top: 48px;
   margin-bottom: 48px;
 }
 .about__subtitle {
@@ -717,6 +718,7 @@ input[type~=text], input[type~=tel], textarea {
 @media (max-width: 1243px) {
   .about__title {
     max-width: 361px;
+    margin-top: 0;
     margin-bottom: 48px;
   }
   .about__subtitle {
@@ -2586,7 +2588,7 @@ object-fit: contain;}
     line-height: 130%;
   }
   .about-heading__container {
-    background :url(./image/about_new_tablet.jpg) no-repeat center center / cover;
+    background:  no-repeat center center / cover url(../../../image/about_new_tablet.jpg);
   }
   .about-heading__inner {
     padding: 129px 0 128px 0;
@@ -2721,7 +2723,7 @@ object-fit: contain;}
     padding-left: 13px;
   }
   .about-heading__container {
-    background: url(./image/about_new_tablet.jpg) no-repeat center center / cover;
+    background:  no-repeat center center / cover url(../../../image/about_new_tablet.jpg);
   }
   .about-heading__inner {
     padding: 56px 0 38px 0;
